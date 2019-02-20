@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;empty_min_CC2650DK_4XS_GNU_CC2650F128&apos;" deleteContents="false" description="Delete resource &apos;empty_min_CC2650DK_4XS_GNU_CC2650F128&apos;" element1="/empty_min_CC2650DK_4XS_GNU_CC2650F128" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1548539591559"/>
+</session>

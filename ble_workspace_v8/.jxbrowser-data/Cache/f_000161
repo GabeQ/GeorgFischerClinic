@@ -1,0 +1,314 @@
+[
+  {
+    "downloadLink": "api/bundle?vid=tirtos_cc13xx_cc26xx__2.21.00.06&download=true&analyticsDevice=undefined&analyticsDevtool=CC2650%20LaunchPad&analyticsPath=Software%2FTI-RTOS%20for%20CC2650%2FDevelopment%20Tools%2FCC2650%20LaunchPad%2FKernel%20Examples",
+    "makeofflineLink": "api/bundles?vids=tirtos_cc13xx_cc26xx__2.21.00.06",
+    "removeofflineLink": "api/resources?id=6smq1SEVY44q3Q&path=Software/TI-RTOS for CC2650/Development Tools/CC2650 LaunchPad/Kernel Examples&removeoffline=true",
+    "name": "Benchmark Example",
+    "resourceType": "projectSpec",
+    "coreTypes": [
+      "Cortex M.CC2650F128"
+    ],
+    "devtools": [
+      "CC2650 LaunchPad"
+    ],
+    "description": "This example gathers and prints benchmark timing data for some representative SYS/BIOS APIs.",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "_id": "6smq1SEVY44q3Q",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "devtools_category": [
+      "CC2650 LaunchPad"
+    ],
+    "link": "api/linkTo/6smq1SEVY44q3Q?analyticsDevice=undefined&analyticsDevtool=CC2650%20LaunchPad&analyticsPath=Software%2FTI-RTOS%20for%20CC2650%2FDevelopment%20Tools%2FCC2650%20LaunchPad%2FKernel%20Examples&extname=.projectspec",
+    "package": "TI-RTOS for CC2650",
+    "packageId": "tirtos_cc13xx_cc26xx",
+    "packageVersion": "2.21.00.06",
+    "packageUId": "tirtos_cc13xx_cc26xx__2.21.00.06",
+    "packagePath": "tirtos_cc13xx_cc26xx_2_21_00_06",
+    "allowPartialDownload": false,
+    "linkType": "local",
+    "_originalJsonFile": "tirtos_cc13xx_cc26xx_2_21_00_06/content.tirex.json",
+    "includedFilesForDownload": [],
+    "type": "resource",
+    "text": "Benchmark Example",
+    "url": "/api/resources?devtool=CC2650%20LaunchPad&package=com.ti.SIMPLELINK_CC13X0_SDK__2.40.00.20::com.ti.SIMPLELINK_CC13X2_SDK__2.30.00.45::com.ti.SIMPLELINK_MSP432_SDK__2.40.00.10::com.ti.SIMPLELINK_MSP432E4_SDK__2.40.00.11::com.ti.SIMPLELINK_CC26X2_SDK__2.30.00.34::com.ti.SIMPLELINK_CC2640R2_SDK__2.40.00.32::com.ti.SIMPLELINK_CC32XX_SDK__2.30.00.05::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.50.00.62::com.ti.SIMPLELINK_SDK_BLE_PLUGIN__1.40.00.42::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__2.30.00.10::com.ti.SIMPLELINK_SDK_VOICE_DETECTION_PLUGIN__1.50.00.15::com.ti.SIMPLELINK_SDK_TI_15_4_STACK_PLUGIN__2.20.00.05::com.ti.SIMPLELINK_ZIGBEE_SDK_PLUGIN__2.20.00.06::energia.core__18.0.0::energia.tool.arm-none-eabi-gcc__6.3.1-20170620::energia.tool.ino2cpp__1.0.3::energia.boards.cc13xx__5.20.0::energia.boards.cc3220emt__5.6.2::energia.boards.msp432r__5.6.3::com.ti.WATSON_MSP432E4__1.10.00.04::com.ti.WATSON_CC32XX__1.10.00.04::com.ti.SAIL__1.30.00.02::com.ti.AZURE_CC32XX__2.10.00.04::com.ti.AZURE_MSP432E4__2.10.00.04::com.ti.SIMPLELINK_SDK_NFC_PLUGIN__2.20.00.08::c2000ware_software_package__1.00.06.00::digital_power_c2000ware_sdk_software_package__1.02.00.00::powerSUITE_software_package__2.03.00.00::msp430ware__3.80.06.03::com.ti.mmwave_industrial_toolbox__3.1.1::com.ti.mmwave_automotive_toolbox__2.4.7::com.ti.AWS_CC32XX__2.10.00.04::com.ti.AWS_MSP432E4__2.10.00.04::sitara__1.02.00.00::tm4c__2.1.4.178::tirtos_msp43x__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::tirtos_tivac__2.16.00.08::tirtos_simplelink__2.13.01.09::sysbios__6.50.01.12::xdctools__3.51.01.18&path=Software/TI-RTOS%20for%20CC2650/Development%20Tools/CC2650%20LaunchPad/Kernel%20Examples",
+    "importProject": "api/importProject/6smq1SEVY44q3Q/Cortex M.CC2650F128?connection=TIXDS110_Connection.xml&analyticsDevice=undefined&analyticsDevtool=CC2650%20LaunchPad&analyticsPath=Software%2FTI-RTOS%20for%20CC2650%2FDevelopment%20Tools%2FCC2650%20LaunchPad%2FKernel%20Examples",
+    "packageOrder": 231
+  },
+  {
+    "downloadLink": "api/bundle?vid=tirtos_cc13xx_cc26xx__2.21.00.06&download=true&analyticsDevice=undefined&analyticsDevtool=CC2650%20LaunchPad&analyticsPath=Software%2FTI-RTOS%20for%20CC2650%2FDevelopment%20Tools%2FCC2650%20LaunchPad%2FKernel%20Examples",
+    "makeofflineLink": "api/bundles?vids=tirtos_cc13xx_cc26xx__2.21.00.06",
+    "removeofflineLink": "api/resources?id=6sml3hwA9Yu41c&path=Software/TI-RTOS for CC2650/Development Tools/CC2650 LaunchPad/Kernel Examples&removeoffline=true",
+    "name": "C++ Example (bigtime)",
+    "resourceType": "projectSpec",
+    "coreTypes": [
+      "Cortex M.CC2650F128"
+    ],
+    "devtools": [
+      "CC2650 LaunchPad"
+    ],
+    "description": "In this program, C++ is used to create a real-time clock/calendar.",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "_id": "6sml3hwA9Yu41c",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "devtools_category": [
+      "CC2650 LaunchPad"
+    ],
+    "link": "api/linkTo/6sml3hwA9Yu41c?analyticsDevice=undefined&analyticsDevtool=CC2650%20LaunchPad&analyticsPath=Software%2FTI-RTOS%20for%20CC2650%2FDevelopment%20Tools%2FCC2650%20LaunchPad%2FKernel%20Examples&extname=.projectspec",
+    "package": "TI-RTOS for CC2650",
+    "packageId": "tirtos_cc13xx_cc26xx",
+    "packageVersion": "2.21.00.06",
+    "packageUId": "tirtos_cc13xx_cc26xx__2.21.00.06",
+    "packagePath": "tirtos_cc13xx_cc26xx_2_21_00_06",
+    "allowPartialDownload": false,
+    "linkType": "local",
+    "_originalJsonFile": "tirtos_cc13xx_cc26xx_2_21_00_06/content.tirex.json",
+    "includedFilesForDownload": [],
+    "type": "resource",
+    "text": "C++ Example (bigtime)",
+    "url": "/api/resources?devtool=CC2650%20LaunchPad&package=com.ti.SIMPLELINK_CC13X0_SDK__2.40.00.20::com.ti.SIMPLELINK_CC13X2_SDK__2.30.00.45::com.ti.SIMPLELINK_MSP432_SDK__2.40.00.10::com.ti.SIMPLELINK_MSP432E4_SDK__2.40.00.11::com.ti.SIMPLELINK_CC26X2_SDK__2.30.00.34::com.ti.SIMPLELINK_CC2640R2_SDK__2.40.00.32::com.ti.SIMPLELINK_CC32XX_SDK__2.30.00.05::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.50.00.62::com.ti.SIMPLELINK_SDK_BLE_PLUGIN__1.40.00.42::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__2.30.00.10::com.ti.SIMPLELINK_SDK_VOICE_DETECTION_PLUGIN__1.50.00.15::com.ti.SIMPLELINK_SDK_TI_15_4_STACK_PLUGIN__2.20.00.05::com.ti.SIMPLELINK_ZIGBEE_SDK_PLUGIN__2.20.00.06::energia.core__18.0.0::energia.tool.arm-none-eabi-gcc__6.3.1-20170620::energia.tool.ino2cpp__1.0.3::energia.boards.cc13xx__5.20.0::energia.boards.cc3220emt__5.6.2::energia.boards.msp432r__5.6.3::com.ti.WATSON_MSP432E4__1.10.00.04::com.ti.WATSON_CC32XX__1.10.00.04::com.ti.SAIL__1.30.00.02::com.ti.AZURE_CC32XX__2.10.00.04::com.ti.AZURE_MSP432E4__2.10.00.04::com.ti.SIMPLELINK_SDK_NFC_PLUGIN__2.20.00.08::c2000ware_software_package__1.00.06.00::digital_power_c2000ware_sdk_software_package__1.02.00.00::powerSUITE_software_package__2.03.00.00::msp430ware__3.80.06.03::com.ti.mmwave_industrial_toolbox__3.1.1::com.ti.mmwave_automotive_toolbox__2.4.7::com.ti.AWS_CC32XX__2.10.00.04::com.ti.AWS_MSP432E4__2.10.00.04::sitara__1.02.00.00::tm4c__2.1.4.178::tirtos_msp43x__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::tirtos_tivac__2.16.00.08::tirtos_simplelink__2.13.01.09::sysbios__6.50.01.12::xdctools__3.51.01.18&path=Software/TI-RTOS%20for%20CC2650/Development%20Tools/CC2650%20LaunchPad/Kernel%20Examples",
+    "importProject": "api/importProject/6sml3hwA9Yu41c/Cortex M.CC2650F128?connection=TIXDS110_Connection.xml&analyticsDevice=undefined&analyticsDevtool=CC2650%20LaunchPad&analyticsPath=Software%2FTI-RTOS%20for%20CC2650%2FDevelopment%20Tools%2FCC2650%20LaunchPad%2FKernel%20Examples",
+    "packageOrder": 231
+  },
+  {
+    "downloadLink": "api/bundle?vid=tirtos_cc13xx_cc26xx__2.21.00.06&download=true&analyticsDevice=undefined&analyticsDevtool=CC2650%20LaunchPad&analyticsPath=Software%2FTI-RTOS%20for%20CC2650%2FDevelopment%20Tools%2FCC2650%20LaunchPad%2FKernel%20Examples",
+    "makeofflineLink": "api/bundles?vids=tirtos_cc13xx_cc26xx__2.21.00.06",
+    "removeofflineLink": "api/resources?id=6sm_gr9IJFPo5U&path=Software/TI-RTOS for CC2650/Development Tools/CC2650 LaunchPad/Kernel Examples&removeoffline=true",
+    "name": "Clock Example",
+    "resourceType": "projectSpec",
+    "coreTypes": [
+      "Cortex M.CC2650F128"
+    ],
+    "devtools": [
+      "CC2650 LaunchPad"
+    ],
+    "description": "The clock example shows how to use the ti.sysbios.knl.Clock module to create one-shot and periodic Clock Instances. Clock Instances are essentially functions that run after a certain number of Clock ticks.",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "_id": "6sm_gr9IJFPo5U",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "devtools_category": [
+      "CC2650 LaunchPad"
+    ],
+    "link": "api/linkTo/6sm_gr9IJFPo5U?analyticsDevice=undefined&analyticsDevtool=CC2650%20LaunchPad&analyticsPath=Software%2FTI-RTOS%20for%20CC2650%2FDevelopment%20Tools%2FCC2650%20LaunchPad%2FKernel%20Examples&extname=.projectspec",
+    "package": "TI-RTOS for CC2650",
+    "packageId": "tirtos_cc13xx_cc26xx",
+    "packageVersion": "2.21.00.06",
+    "packageUId": "tirtos_cc13xx_cc26xx__2.21.00.06",
+    "packagePath": "tirtos_cc13xx_cc26xx_2_21_00_06",
+    "allowPartialDownload": false,
+    "linkType": "local",
+    "_originalJsonFile": "tirtos_cc13xx_cc26xx_2_21_00_06/content.tirex.json",
+    "includedFilesForDownload": [],
+    "type": "resource",
+    "text": "Clock Example",
+    "url": "/api/resources?devtool=CC2650%20LaunchPad&package=com.ti.SIMPLELINK_CC13X0_SDK__2.40.00.20::com.ti.SIMPLELINK_CC13X2_SDK__2.30.00.45::com.ti.SIMPLELINK_MSP432_SDK__2.40.00.10::com.ti.SIMPLELINK_MSP432E4_SDK__2.40.00.11::com.ti.SIMPLELINK_CC26X2_SDK__2.30.00.34::com.ti.SIMPLELINK_CC2640R2_SDK__2.40.00.32::com.ti.SIMPLELINK_CC32XX_SDK__2.30.00.05::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.50.00.62::com.ti.SIMPLELINK_SDK_BLE_PLUGIN__1.40.00.42::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__2.30.00.10::com.ti.SIMPLELINK_SDK_VOICE_DETECTION_PLUGIN__1.50.00.15::com.ti.SIMPLELINK_SDK_TI_15_4_STACK_PLUGIN__2.20.00.05::com.ti.SIMPLELINK_ZIGBEE_SDK_PLUGIN__2.20.00.06::energia.core__18.0.0::energia.tool.arm-none-eabi-gcc__6.3.1-20170620::energia.tool.ino2cpp__1.0.3::energia.boards.cc13xx__5.20.0::energia.boards.cc3220emt__5.6.2::energia.boards.msp432r__5.6.3::com.ti.WATSON_MSP432E4__1.10.00.04::com.ti.WATSON_CC32XX__1.10.00.04::com.ti.SAIL__1.30.00.02::com.ti.AZURE_CC32XX__2.10.00.04::com.ti.AZURE_MSP432E4__2.10.00.04::com.ti.SIMPLELINK_SDK_NFC_PLUGIN__2.20.00.08::c2000ware_software_package__1.00.06.00::digital_power_c2000ware_sdk_software_package__1.02.00.00::powerSUITE_software_package__2.03.00.00::msp430ware__3.80.06.03::com.ti.mmwave_industrial_toolbox__3.1.1::com.ti.mmwave_automotive_toolbox__2.4.7::com.ti.AWS_CC32XX__2.10.00.04::com.ti.AWS_MSP432E4__2.10.00.04::sitara__1.02.00.00::tm4c__2.1.4.178::tirtos_msp43x__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::tirtos_tivac__2.16.00.08::tirtos_simplelink__2.13.01.09::sysbios__6.50.01.12::xdctools__3.51.01.18&path=Software/TI-RTOS%20for%20CC2650/Development%20Tools/CC2650%20LaunchPad/Kernel%20Examples",
+    "importProject": "api/importProject/6sm_gr9IJFPo5U/Cortex M.CC2650F128?connection=TIXDS110_Connection.xml&analyticsDevice=undefined&analyticsDevtool=CC2650%20LaunchPad&analyticsPath=Software%2FTI-RTOS%20for%20CC2650%2FDevelopment%20Tools%2FCC2650%20LaunchPad%2FKernel%20Examples",
+    "packageOrder": 231
+  },
+  {
+    "downloadLink": "api/bundle?vid=tirtos_cc13xx_cc26xx__2.21.00.06&download=true&analyticsDevice=undefined&analyticsDevtool=CC2650%20LaunchPad&analyticsPath=Software%2FTI-RTOS%20for%20CC2650%2FDevelopment%20Tools%2FCC2650%20LaunchPad%2FKernel%20Examples",
+    "makeofflineLink": "api/bundles?vids=tirtos_cc13xx_cc26xx__2.21.00.06",
+    "removeofflineLink": "api/resources?id=6smIROpcx2TMLQ&path=Software/TI-RTOS for CC2650/Development Tools/CC2650 LaunchPad/Kernel Examples&removeoffline=true",
+    "name": "Error Example",
+    "resourceType": "projectSpec",
+    "coreTypes": [
+      "Cortex M.CC2650F128"
+    ],
+    "devtools": [
+      "CC2650 LaunchPad"
+    ],
+    "description": "This example shows how to use Error_Blocks to catch runtime errors. An Error_Block is passed to Task_create() and then checked for create failure. When no Error_Block is passed, the application will terminate when an error occurs. The error.cfg file shows how to plug an error hook.",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "_id": "6smIROpcx2TMLQ",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "devtools_category": [
+      "CC2650 LaunchPad"
+    ],
+    "link": "api/linkTo/6smIROpcx2TMLQ?analyticsDevice=undefined&analyticsDevtool=CC2650%20LaunchPad&analyticsPath=Software%2FTI-RTOS%20for%20CC2650%2FDevelopment%20Tools%2FCC2650%20LaunchPad%2FKernel%20Examples&extname=.projectspec",
+    "package": "TI-RTOS for CC2650",
+    "packageId": "tirtos_cc13xx_cc26xx",
+    "packageVersion": "2.21.00.06",
+    "packageUId": "tirtos_cc13xx_cc26xx__2.21.00.06",
+    "packagePath": "tirtos_cc13xx_cc26xx_2_21_00_06",
+    "allowPartialDownload": false,
+    "linkType": "local",
+    "_originalJsonFile": "tirtos_cc13xx_cc26xx_2_21_00_06/content.tirex.json",
+    "includedFilesForDownload": [],
+    "type": "resource",
+    "text": "Error Example",
+    "url": "/api/resources?devtool=CC2650%20LaunchPad&package=com.ti.SIMPLELINK_CC13X0_SDK__2.40.00.20::com.ti.SIMPLELINK_CC13X2_SDK__2.30.00.45::com.ti.SIMPLELINK_MSP432_SDK__2.40.00.10::com.ti.SIMPLELINK_MSP432E4_SDK__2.40.00.11::com.ti.SIMPLELINK_CC26X2_SDK__2.30.00.34::com.ti.SIMPLELINK_CC2640R2_SDK__2.40.00.32::com.ti.SIMPLELINK_CC32XX_SDK__2.30.00.05::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.50.00.62::com.ti.SIMPLELINK_SDK_BLE_PLUGIN__1.40.00.42::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__2.30.00.10::com.ti.SIMPLELINK_SDK_VOICE_DETECTION_PLUGIN__1.50.00.15::com.ti.SIMPLELINK_SDK_TI_15_4_STACK_PLUGIN__2.20.00.05::com.ti.SIMPLELINK_ZIGBEE_SDK_PLUGIN__2.20.00.06::energia.core__18.0.0::energia.tool.arm-none-eabi-gcc__6.3.1-20170620::energia.tool.ino2cpp__1.0.3::energia.boards.cc13xx__5.20.0::energia.boards.cc3220emt__5.6.2::energia.boards.msp432r__5.6.3::com.ti.WATSON_MSP432E4__1.10.00.04::com.ti.WATSON_CC32XX__1.10.00.04::com.ti.SAIL__1.30.00.02::com.ti.AZURE_CC32XX__2.10.00.04::com.ti.AZURE_MSP432E4__2.10.00.04::com.ti.SIMPLELINK_SDK_NFC_PLUGIN__2.20.00.08::c2000ware_software_package__1.00.06.00::digital_power_c2000ware_sdk_software_package__1.02.00.00::powerSUITE_software_package__2.03.00.00::msp430ware__3.80.06.03::com.ti.mmwave_industrial_toolbox__3.1.1::com.ti.mmwave_automotive_toolbox__2.4.7::com.ti.AWS_CC32XX__2.10.00.04::com.ti.AWS_MSP432E4__2.10.00.04::sitara__1.02.00.00::tm4c__2.1.4.178::tirtos_msp43x__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::tirtos_tivac__2.16.00.08::tirtos_simplelink__2.13.01.09::sysbios__6.50.01.12::xdctools__3.51.01.18&path=Software/TI-RTOS%20for%20CC2650/Development%20Tools/CC2650%20LaunchPad/Kernel%20Examples",
+    "importProject": "api/importProject/6smIROpcx2TMLQ/Cortex M.CC2650F128?connection=TIXDS110_Connection.xml&analyticsDevice=undefined&analyticsDevtool=CC2650%20LaunchPad&analyticsPath=Software%2FTI-RTOS%20for%20CC2650%2FDevelopment%20Tools%2FCC2650%20LaunchPad%2FKernel%20Examples",
+    "packageOrder": 231
+  },
+  {
+    "downloadLink": "api/bundle?vid=tirtos_cc13xx_cc26xx__2.21.00.06&download=true&analyticsDevice=undefined&analyticsDevtool=CC2650%20LaunchPad&analyticsPath=Software%2FTI-RTOS%20for%20CC2650%2FDevelopment%20Tools%2FCC2650%20LaunchPad%2FKernel%20Examples",
+    "makeofflineLink": "api/bundles?vids=tirtos_cc13xx_cc26xx__2.21.00.06",
+    "removeofflineLink": "api/resources?id=6smEL8_fIjR-6M&path=Software/TI-RTOS for CC2650/Development Tools/CC2650 LaunchPad/Kernel Examples&removeoffline=true",
+    "name": "Hello Example",
+    "resourceType": "projectSpec",
+    "coreTypes": [
+      "Cortex M.CC2650F128"
+    ],
+    "devtools": [
+      "CC2650 LaunchPad"
+    ],
+    "description": "The hello example serves as a basic sanity check program for SYS/BIOS. It demonstrates how to print the string 'hello world' to stdout.",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "_id": "6smEL8_fIjR-6M",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "devtools_category": [
+      "CC2650 LaunchPad"
+    ],
+    "link": "api/linkTo/6smEL8_fIjR-6M?analyticsDevice=undefined&analyticsDevtool=CC2650%20LaunchPad&analyticsPath=Software%2FTI-RTOS%20for%20CC2650%2FDevelopment%20Tools%2FCC2650%20LaunchPad%2FKernel%20Examples&extname=.projectspec",
+    "package": "TI-RTOS for CC2650",
+    "packageId": "tirtos_cc13xx_cc26xx",
+    "packageVersion": "2.21.00.06",
+    "packageUId": "tirtos_cc13xx_cc26xx__2.21.00.06",
+    "packagePath": "tirtos_cc13xx_cc26xx_2_21_00_06",
+    "allowPartialDownload": false,
+    "linkType": "local",
+    "_originalJsonFile": "tirtos_cc13xx_cc26xx_2_21_00_06/content.tirex.json",
+    "includedFilesForDownload": [],
+    "type": "resource",
+    "text": "Hello Example",
+    "url": "/api/resources?devtool=CC2650%20LaunchPad&package=com.ti.SIMPLELINK_CC13X0_SDK__2.40.00.20::com.ti.SIMPLELINK_CC13X2_SDK__2.30.00.45::com.ti.SIMPLELINK_MSP432_SDK__2.40.00.10::com.ti.SIMPLELINK_MSP432E4_SDK__2.40.00.11::com.ti.SIMPLELINK_CC26X2_SDK__2.30.00.34::com.ti.SIMPLELINK_CC2640R2_SDK__2.40.00.32::com.ti.SIMPLELINK_CC32XX_SDK__2.30.00.05::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.50.00.62::com.ti.SIMPLELINK_SDK_BLE_PLUGIN__1.40.00.42::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__2.30.00.10::com.ti.SIMPLELINK_SDK_VOICE_DETECTION_PLUGIN__1.50.00.15::com.ti.SIMPLELINK_SDK_TI_15_4_STACK_PLUGIN__2.20.00.05::com.ti.SIMPLELINK_ZIGBEE_SDK_PLUGIN__2.20.00.06::energia.core__18.0.0::energia.tool.arm-none-eabi-gcc__6.3.1-20170620::energia.tool.ino2cpp__1.0.3::energia.boards.cc13xx__5.20.0::energia.boards.cc3220emt__5.6.2::energia.boards.msp432r__5.6.3::com.ti.WATSON_MSP432E4__1.10.00.04::com.ti.WATSON_CC32XX__1.10.00.04::com.ti.SAIL__1.30.00.02::com.ti.AZURE_CC32XX__2.10.00.04::com.ti.AZURE_MSP432E4__2.10.00.04::com.ti.SIMPLELINK_SDK_NFC_PLUGIN__2.20.00.08::c2000ware_software_package__1.00.06.00::digital_power_c2000ware_sdk_software_package__1.02.00.00::powerSUITE_software_package__2.03.00.00::msp430ware__3.80.06.03::com.ti.mmwave_industrial_toolbox__3.1.1::com.ti.mmwave_automotive_toolbox__2.4.7::com.ti.AWS_CC32XX__2.10.00.04::com.ti.AWS_MSP432E4__2.10.00.04::sitara__1.02.00.00::tm4c__2.1.4.178::tirtos_msp43x__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::tirtos_tivac__2.16.00.08::tirtos_simplelink__2.13.01.09::sysbios__6.50.01.12::xdctools__3.51.01.18&path=Software/TI-RTOS%20for%20CC2650/Development%20Tools/CC2650%20LaunchPad/Kernel%20Examples",
+    "importProject": "api/importProject/6smEL8_fIjR-6M/Cortex M.CC2650F128?connection=TIXDS110_Connection.xml&analyticsDevice=undefined&analyticsDevtool=CC2650%20LaunchPad&analyticsPath=Software%2FTI-RTOS%20for%20CC2650%2FDevelopment%20Tools%2FCC2650%20LaunchPad%2FKernel%20Examples",
+    "packageOrder": 231
+  },
+  {
+    "downloadLink": "api/bundle?vid=tirtos_cc13xx_cc26xx__2.21.00.06&download=true&analyticsDevice=undefined&analyticsDevtool=CC2650%20LaunchPad&analyticsPath=Software%2FTI-RTOS%20for%20CC2650%2FDevelopment%20Tools%2FCC2650%20LaunchPad%2FKernel%20Examples",
+    "makeofflineLink": "api/bundles?vids=tirtos_cc13xx_cc26xx__2.21.00.06",
+    "removeofflineLink": "api/resources?id=6smGWSBhpHqTTk&path=Software/TI-RTOS for CC2650/Development Tools/CC2650 LaunchPad/Kernel Examples&removeoffline=true",
+    "name": "Memory Example",
+    "resourceType": "projectSpec",
+    "coreTypes": [
+      "Cortex M.CC2650F128"
+    ],
+    "devtools": [
+      "CC2650 LaunchPad"
+    ],
+    "description": "This example shows the use of xdc.runtime.Memory module and different xdc.runtime.IHeap implementations to manage memory. A system heap is created statically using ti.sysbios.heaps.HeapMem.",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "_id": "6smGWSBhpHqTTk",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "devtools_category": [
+      "CC2650 LaunchPad"
+    ],
+    "link": "api/linkTo/6smGWSBhpHqTTk?analyticsDevice=undefined&analyticsDevtool=CC2650%20LaunchPad&analyticsPath=Software%2FTI-RTOS%20for%20CC2650%2FDevelopment%20Tools%2FCC2650%20LaunchPad%2FKernel%20Examples&extname=.projectspec",
+    "package": "TI-RTOS for CC2650",
+    "packageId": "tirtos_cc13xx_cc26xx",
+    "packageVersion": "2.21.00.06",
+    "packageUId": "tirtos_cc13xx_cc26xx__2.21.00.06",
+    "packagePath": "tirtos_cc13xx_cc26xx_2_21_00_06",
+    "allowPartialDownload": false,
+    "linkType": "local",
+    "_originalJsonFile": "tirtos_cc13xx_cc26xx_2_21_00_06/content.tirex.json",
+    "includedFilesForDownload": [],
+    "type": "resource",
+    "text": "Memory Example",
+    "url": "/api/resources?devtool=CC2650%20LaunchPad&package=com.ti.SIMPLELINK_CC13X0_SDK__2.40.00.20::com.ti.SIMPLELINK_CC13X2_SDK__2.30.00.45::com.ti.SIMPLELINK_MSP432_SDK__2.40.00.10::com.ti.SIMPLELINK_MSP432E4_SDK__2.40.00.11::com.ti.SIMPLELINK_CC26X2_SDK__2.30.00.34::com.ti.SIMPLELINK_CC2640R2_SDK__2.40.00.32::com.ti.SIMPLELINK_CC32XX_SDK__2.30.00.05::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.50.00.62::com.ti.SIMPLELINK_SDK_BLE_PLUGIN__1.40.00.42::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__2.30.00.10::com.ti.SIMPLELINK_SDK_VOICE_DETECTION_PLUGIN__1.50.00.15::com.ti.SIMPLELINK_SDK_TI_15_4_STACK_PLUGIN__2.20.00.05::com.ti.SIMPLELINK_ZIGBEE_SDK_PLUGIN__2.20.00.06::energia.core__18.0.0::energia.tool.arm-none-eabi-gcc__6.3.1-20170620::energia.tool.ino2cpp__1.0.3::energia.boards.cc13xx__5.20.0::energia.boards.cc3220emt__5.6.2::energia.boards.msp432r__5.6.3::com.ti.WATSON_MSP432E4__1.10.00.04::com.ti.WATSON_CC32XX__1.10.00.04::com.ti.SAIL__1.30.00.02::com.ti.AZURE_CC32XX__2.10.00.04::com.ti.AZURE_MSP432E4__2.10.00.04::com.ti.SIMPLELINK_SDK_NFC_PLUGIN__2.20.00.08::c2000ware_software_package__1.00.06.00::digital_power_c2000ware_sdk_software_package__1.02.00.00::powerSUITE_software_package__2.03.00.00::msp430ware__3.80.06.03::com.ti.mmwave_industrial_toolbox__3.1.1::com.ti.mmwave_automotive_toolbox__2.4.7::com.ti.AWS_CC32XX__2.10.00.04::com.ti.AWS_MSP432E4__2.10.00.04::sitara__1.02.00.00::tm4c__2.1.4.178::tirtos_msp43x__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::tirtos_tivac__2.16.00.08::tirtos_simplelink__2.13.01.09::sysbios__6.50.01.12::xdctools__3.51.01.18&path=Software/TI-RTOS%20for%20CC2650/Development%20Tools/CC2650%20LaunchPad/Kernel%20Examples",
+    "importProject": "api/importProject/6smGWSBhpHqTTk/Cortex M.CC2650F128?connection=TIXDS110_Connection.xml&analyticsDevice=undefined&analyticsDevtool=CC2650%20LaunchPad&analyticsPath=Software%2FTI-RTOS%20for%20CC2650%2FDevelopment%20Tools%2FCC2650%20LaunchPad%2FKernel%20Examples",
+    "packageOrder": 231
+  },
+  {
+    "downloadLink": "api/bundle?vid=tirtos_cc13xx_cc26xx__2.21.00.06&download=true&analyticsDevice=undefined&analyticsDevtool=CC2650%20LaunchPad&analyticsPath=Software%2FTI-RTOS%20for%20CC2650%2FDevelopment%20Tools%2FCC2650%20LaunchPad%2FKernel%20Examples",
+    "makeofflineLink": "api/bundles?vids=tirtos_cc13xx_cc26xx__2.21.00.06",
+    "removeofflineLink": "api/resources?id=6smsD_YCr44jg8&path=Software/TI-RTOS for CC2650/Development Tools/CC2650 LaunchPad/Kernel Examples&removeoffline=true",
+    "name": "Task Mutex Example",
+    "resourceType": "projectSpec",
+    "coreTypes": [
+      "Cortex M.CC2650F128"
+    ],
+    "devtools": [
+      "CC2650 LaunchPad"
+    ],
+    "description": "This example shows the use of two tasks and one semaphore to protect data access.",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "_id": "6smsD_YCr44jg8",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "devtools_category": [
+      "CC2650 LaunchPad"
+    ],
+    "link": "api/linkTo/6smsD_YCr44jg8?analyticsDevice=undefined&analyticsDevtool=CC2650%20LaunchPad&analyticsPath=Software%2FTI-RTOS%20for%20CC2650%2FDevelopment%20Tools%2FCC2650%20LaunchPad%2FKernel%20Examples&extname=.projectspec",
+    "package": "TI-RTOS for CC2650",
+    "packageId": "tirtos_cc13xx_cc26xx",
+    "packageVersion": "2.21.00.06",
+    "packageUId": "tirtos_cc13xx_cc26xx__2.21.00.06",
+    "packagePath": "tirtos_cc13xx_cc26xx_2_21_00_06",
+    "allowPartialDownload": false,
+    "linkType": "local",
+    "_originalJsonFile": "tirtos_cc13xx_cc26xx_2_21_00_06/content.tirex.json",
+    "includedFilesForDownload": [],
+    "type": "resource",
+    "text": "Task Mutex Example",
+    "url": "/api/resources?devtool=CC2650%20LaunchPad&package=com.ti.SIMPLELINK_CC13X0_SDK__2.40.00.20::com.ti.SIMPLELINK_CC13X2_SDK__2.30.00.45::com.ti.SIMPLELINK_MSP432_SDK__2.40.00.10::com.ti.SIMPLELINK_MSP432E4_SDK__2.40.00.11::com.ti.SIMPLELINK_CC26X2_SDK__2.30.00.34::com.ti.SIMPLELINK_CC2640R2_SDK__2.40.00.32::com.ti.SIMPLELINK_CC32XX_SDK__2.30.00.05::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.50.00.62::com.ti.SIMPLELINK_SDK_BLE_PLUGIN__1.40.00.42::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__2.30.00.10::com.ti.SIMPLELINK_SDK_VOICE_DETECTION_PLUGIN__1.50.00.15::com.ti.SIMPLELINK_SDK_TI_15_4_STACK_PLUGIN__2.20.00.05::com.ti.SIMPLELINK_ZIGBEE_SDK_PLUGIN__2.20.00.06::energia.core__18.0.0::energia.tool.arm-none-eabi-gcc__6.3.1-20170620::energia.tool.ino2cpp__1.0.3::energia.boards.cc13xx__5.20.0::energia.boards.cc3220emt__5.6.2::energia.boards.msp432r__5.6.3::com.ti.WATSON_MSP432E4__1.10.00.04::com.ti.WATSON_CC32XX__1.10.00.04::com.ti.SAIL__1.30.00.02::com.ti.AZURE_CC32XX__2.10.00.04::com.ti.AZURE_MSP432E4__2.10.00.04::com.ti.SIMPLELINK_SDK_NFC_PLUGIN__2.20.00.08::c2000ware_software_package__1.00.06.00::digital_power_c2000ware_sdk_software_package__1.02.00.00::powerSUITE_software_package__2.03.00.00::msp430ware__3.80.06.03::com.ti.mmwave_industrial_toolbox__3.1.1::com.ti.mmwave_automotive_toolbox__2.4.7::com.ti.AWS_CC32XX__2.10.00.04::com.ti.AWS_MSP432E4__2.10.00.04::sitara__1.02.00.00::tm4c__2.1.4.178::tirtos_msp43x__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::tirtos_tivac__2.16.00.08::tirtos_simplelink__2.13.01.09::sysbios__6.50.01.12::xdctools__3.51.01.18&path=Software/TI-RTOS%20for%20CC2650/Development%20Tools/CC2650%20LaunchPad/Kernel%20Examples",
+    "importProject": "api/importProject/6smsD_YCr44jg8/Cortex M.CC2650F128?connection=TIXDS110_Connection.xml&analyticsDevice=undefined&analyticsDevtool=CC2650%20LaunchPad&analyticsPath=Software%2FTI-RTOS%20for%20CC2650%2FDevelopment%20Tools%2FCC2650%20LaunchPad%2FKernel%20Examples",
+    "packageOrder": 231
+  },
+  {
+    "downloadLink": "api/bundle?vid=tirtos_cc13xx_cc26xx__2.21.00.06&download=true&analyticsDevice=undefined&analyticsDevtool=CC2650%20LaunchPad&analyticsPath=Software%2FTI-RTOS%20for%20CC2650%2FDevelopment%20Tools%2FCC2650%20LaunchPad%2FKernel%20Examples",
+    "makeofflineLink": "api/bundles?vids=tirtos_cc13xx_cc26xx__2.21.00.06",
+    "removeofflineLink": "api/resources?id=6sm1z0oZqNGOXA&path=Software/TI-RTOS for CC2650/Development Tools/CC2650 LaunchPad/Kernel Examples&removeoffline=true",
+    "name": "Swi Example",
+    "resourceType": "projectSpec",
+    "coreTypes": [
+      "Cortex M.CC2650F128"
+    ],
+    "devtools": [
+      "CC2650 LaunchPad"
+    ],
+    "description": "The swi example shows how to use the ti.sysbios.knl.Swi module. It demonstrates how the various Swi APIs work.",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "_id": "6sm1z0oZqNGOXA",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "devtools_category": [
+      "CC2650 LaunchPad"
+    ],
+    "link": "api/linkTo/6sm1z0oZqNGOXA?analyticsDevice=undefined&analyticsDevtool=CC2650%20LaunchPad&analyticsPath=Software%2FTI-RTOS%20for%20CC2650%2FDevelopment%20Tools%2FCC2650%20LaunchPad%2FKernel%20Examples&extname=.projectspec",
+    "package": "TI-RTOS for CC2650",
+    "packageId": "tirtos_cc13xx_cc26xx",
+    "packageVersion": "2.21.00.06",
+    "packageUId": "tirtos_cc13xx_cc26xx__2.21.00.06",
+    "packagePath": "tirtos_cc13xx_cc26xx_2_21_00_06",
+    "allowPartialDownload": false,
+    "linkType": "local",
+    "_originalJsonFile": "tirtos_cc13xx_cc26xx_2_21_00_06/content.tirex.json",
+    "includedFilesForDownload": [],
+    "type": "resource",
+    "text": "Swi Example",
+    "url": "/api/resources?devtool=CC2650%20LaunchPad&package=com.ti.SIMPLELINK_CC13X0_SDK__2.40.00.20::com.ti.SIMPLELINK_CC13X2_SDK__2.30.00.45::com.ti.SIMPLELINK_MSP432_SDK__2.40.00.10::com.ti.SIMPLELINK_MSP432E4_SDK__2.40.00.11::com.ti.SIMPLELINK_CC26X2_SDK__2.30.00.34::com.ti.SIMPLELINK_CC2640R2_SDK__2.40.00.32::com.ti.SIMPLELINK_CC32XX_SDK__2.30.00.05::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.50.00.62::com.ti.SIMPLELINK_SDK_BLE_PLUGIN__1.40.00.42::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__2.30.00.10::com.ti.SIMPLELINK_SDK_VOICE_DETECTION_PLUGIN__1.50.00.15::com.ti.SIMPLELINK_SDK_TI_15_4_STACK_PLUGIN__2.20.00.05::com.ti.SIMPLELINK_ZIGBEE_SDK_PLUGIN__2.20.00.06::energia.core__18.0.0::energia.tool.arm-none-eabi-gcc__6.3.1-20170620::energia.tool.ino2cpp__1.0.3::energia.boards.cc13xx__5.20.0::energia.boards.cc3220emt__5.6.2::energia.boards.msp432r__5.6.3::com.ti.WATSON_MSP432E4__1.10.00.04::com.ti.WATSON_CC32XX__1.10.00.04::com.ti.SAIL__1.30.00.02::com.ti.AZURE_CC32XX__2.10.00.04::com.ti.AZURE_MSP432E4__2.10.00.04::com.ti.SIMPLELINK_SDK_NFC_PLUGIN__2.20.00.08::c2000ware_software_package__1.00.06.00::digital_power_c2000ware_sdk_software_package__1.02.00.00::powerSUITE_software_package__2.03.00.00::msp430ware__3.80.06.03::com.ti.mmwave_industrial_toolbox__3.1.1::com.ti.mmwave_automotive_toolbox__2.4.7::com.ti.AWS_CC32XX__2.10.00.04::com.ti.AWS_MSP432E4__2.10.00.04::sitara__1.02.00.00::tm4c__2.1.4.178::tirtos_msp43x__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::tirtos_tivac__2.16.00.08::tirtos_simplelink__2.13.01.09::sysbios__6.50.01.12::xdctools__3.51.01.18&path=Software/TI-RTOS%20for%20CC2650/Development%20Tools/CC2650%20LaunchPad/Kernel%20Examples",
+    "importProject": "api/importProject/6sm1z0oZqNGOXA/Cortex M.CC2650F128?connection=TIXDS110_Connection.xml&analyticsDevice=undefined&analyticsDevtool=CC2650%20LaunchPad&analyticsPath=Software%2FTI-RTOS%20for%20CC2650%2FDevelopment%20Tools%2FCC2650%20LaunchPad%2FKernel%20Examples",
+    "packageOrder": 231
+  }
+]

@@ -1,0 +1,8 @@
+
+**** Build of configuration Debug for project project_zero_app_cc2650launchxl ****
+
+"C:\\ti\\ccsv8\\utils\\bin\\gmake" -j -k -j 8 all -O 
+ 
+gmake[1]: 'project_zero_app_cc2650launchxl.out' is up to date.
+
+**** Build Finished ****

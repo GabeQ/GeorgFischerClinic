@@ -1,0 +1,14 @@
+
+**** Build of configuration Debug for project project_zero_stack_cc2650 ****
+
+"C:\\ti\\ccsv8\\utils\\bin\\gmake" -j -k -j 8 all -O 
+ 
+"c:/ti/simplelink/ble_sdk_2_02_01_18/tools/lib_search/lib_search.exe" C:/Users/gquiroz/workspace_v8/project_zero_stack_cc2650/TOOLS/build_config.opt "c:/ti/simplelink/ble_sdk_2_02_01_18/tools/lib_search/params_split_cc2640.xml" c:/ti/simplelink/ble_sdk_2_02_01_18/blelib "C:/Users/gquiroz/workspace_v8/project_zero_stack_cc2650/TOOLS/lib_linker.cmd"
+<<< Using Library: host_pxxx.a >>>
+<<< Using Library: cc2640_ctrl_pxxx.a >>>
+<<< Using Library: cc26xx_hci_tl_none.a >>>
+<<< Not Modifying lib_linker.cmd. Stack configurations have not changed. >>>
+ 
+gmake[2]: 'project_zero_stack_cc2650.out' is up to date.
+
+**** Build Finished ****
