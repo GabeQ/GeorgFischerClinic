@@ -214,11 +214,11 @@ ICall/icall.obj: c:/ti/simplelink/ble_sdk_2_02_01_18/src/icall/inc/ble_user_conf
 ICall/icall.obj: c:/ti/simplelink/ble_sdk_2_02_01_18/src/icall/inc/ble_dispatch.h
 ICall/icall.obj: c:/ti/simplelink/ble_sdk_2_02_01_18/src/components/hal/src/target/_common/cc26xx/rf_hal.h
 ICall/icall.obj: c:/ti/simplelink/ble_sdk_2_02_01_18/src/components/hal/src/target/_common/hal_types.h
-ICall/icall.obj: C:/Users/gquiroz/workspace_v8/project_zero_app_cc2650launchxl/Board/board.h
+ICall/icall.obj: C:/Users/gquiroz/Documents/GitHub/GeorgFischerClinic/ble_workspace_v8/project_zero_app_cc2650launchxl/Board/board.h
 ICall/icall.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/tidrivers_cc13xx_cc26xx_2_20_01_10/packages/ti/drivers/Power.h
 ICall/icall.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/tidrivers_cc13xx_cc26xx_2_20_01_10/packages/ti/drivers/utils/List.h
 ICall/icall.obj: C:/ti/ti-cgt-arm_16.9.6.LTS/include/stddef.h
-ICall/icall.obj: C:/Users/gquiroz/workspace_v8/project_zero_app_cc2650launchxl/Board/CC2650_LAUNCHXL.h
+ICall/icall.obj: C:/Users/gquiroz/Documents/GitHub/GeorgFischerClinic/ble_workspace_v8/project_zero_app_cc2650launchxl/Board/CC2650_LAUNCHXL.h
 ICall/icall.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/tidrivers_cc13xx_cc26xx_2_20_01_10/packages/ti/drivers/PIN.h
 ICall/icall.obj: C:/ti/ti-cgt-arm_16.9.6.LTS/include/stddef.h
 ICall/icall.obj: c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/driverlib/ioc.h
@@ -452,11 +452,11 @@ c:/ti/simplelink/ble_sdk_2_02_01_18/src/icall/inc/ble_user_config.h:
 c:/ti/simplelink/ble_sdk_2_02_01_18/src/icall/inc/ble_dispatch.h: 
 c:/ti/simplelink/ble_sdk_2_02_01_18/src/components/hal/src/target/_common/cc26xx/rf_hal.h: 
 c:/ti/simplelink/ble_sdk_2_02_01_18/src/components/hal/src/target/_common/hal_types.h: 
-C:/Users/gquiroz/workspace_v8/project_zero_app_cc2650launchxl/Board/board.h: 
+C:/Users/gquiroz/Documents/GitHub/GeorgFischerClinic/ble_workspace_v8/project_zero_app_cc2650launchxl/Board/board.h: 
 C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/tidrivers_cc13xx_cc26xx_2_20_01_10/packages/ti/drivers/Power.h: 
 C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/tidrivers_cc13xx_cc26xx_2_20_01_10/packages/ti/drivers/utils/List.h: 
 C:/ti/ti-cgt-arm_16.9.6.LTS/include/stddef.h: 
-C:/Users/gquiroz/workspace_v8/project_zero_app_cc2650launchxl/Board/CC2650_LAUNCHXL.h: 
+C:/Users/gquiroz/Documents/GitHub/GeorgFischerClinic/ble_workspace_v8/project_zero_app_cc2650launchxl/Board/CC2650_LAUNCHXL.h: 
 C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/tidrivers_cc13xx_cc26xx_2_20_01_10/packages/ti/drivers/PIN.h: 
 C:/ti/ti-cgt-arm_16.9.6.LTS/include/stddef.h: 
 c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/driverlib/ioc.h: 

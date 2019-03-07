@@ -189,8 +189,8 @@ CC2650_LAUNCHXL.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01
 CC2650_LAUNCHXL.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/knl/package/Clock_TimerProxy.h
 CC2650_LAUNCHXL.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/driverlib/udma.h
 CC2650_LAUNCHXL.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/inc/hw_udma.h
-CC2650_LAUNCHXL.obj: C:/Users/gquiroz/workspace_v8/empty_CC2650_LAUNCHXL_TI_CC2650F128/Board.h
-CC2650_LAUNCHXL.obj: C:/Users/gquiroz/workspace_v8/empty_CC2650_LAUNCHXL_TI_CC2650F128/CC2650_LAUNCHXL.h
+CC2650_LAUNCHXL.obj: C:/Users/gquiroz/Documents/GitHub/GeorgFischerClinic/ble_workspace_v8/empty_CC2650_LAUNCHXL_TI_CC2650F128/Board.h
+CC2650_LAUNCHXL.obj: C:/Users/gquiroz/Documents/GitHub/GeorgFischerClinic/ble_workspace_v8/empty_CC2650_LAUNCHXL_TI_CC2650F128/CC2650_LAUNCHXL.h
 CC2650_LAUNCHXL.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/tidrivers_cc13xx_cc26xx_2_20_01_10/packages/ti/drivers/UART.h
 CC2650_LAUNCHXL.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/tidrivers_cc13xx_cc26xx_2_20_01_10/packages/ti/drivers/uart/UARTCC26XX.h
 CC2650_LAUNCHXL.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/driverlib/uart.h
@@ -475,8 +475,8 @@ C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbi
 C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/knl/package/Clock_TimerProxy.h: 
 C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/driverlib/udma.h: 
 C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/inc/hw_udma.h: 
-C:/Users/gquiroz/workspace_v8/empty_CC2650_LAUNCHXL_TI_CC2650F128/Board.h: 
-C:/Users/gquiroz/workspace_v8/empty_CC2650_LAUNCHXL_TI_CC2650F128/CC2650_LAUNCHXL.h: 
+C:/Users/gquiroz/Documents/GitHub/GeorgFischerClinic/ble_workspace_v8/empty_CC2650_LAUNCHXL_TI_CC2650F128/Board.h: 
+C:/Users/gquiroz/Documents/GitHub/GeorgFischerClinic/ble_workspace_v8/empty_CC2650_LAUNCHXL_TI_CC2650F128/CC2650_LAUNCHXL.h: 
 C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/tidrivers_cc13xx_cc26xx_2_20_01_10/packages/ti/drivers/UART.h: 
 C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/tidrivers_cc13xx_cc26xx_2_20_01_10/packages/ti/drivers/uart/UARTCC26XX.h: 
 C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/driverlib/uart.h: 

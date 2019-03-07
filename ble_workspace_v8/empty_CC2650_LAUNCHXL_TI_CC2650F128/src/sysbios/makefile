@@ -16,7 +16,7 @@ BIOS_INC  = -I"C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/pa
 
 TARGET_INC = -I"C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/"
 
-INCS = $(BIOS_INC) $(TARGET_INC)  --include_path="C:/Users/gquiroz/workspace_v8/empty_CC2650_LAUNCHXL_TI_CC2650F128" --include_path="C:/Users/gquiroz/workspace_v8/empty_CC2650_LAUNCHXL_TI_CC2650F128" --include_path="C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include"  -IC:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ 
+INCS = $(BIOS_INC) $(TARGET_INC)  --include_path="C:/Users/gquiroz/Documents/GitHub/GeorgFischerClinic/ble_workspace_v8/empty_CC2650_LAUNCHXL_TI_CC2650F128" --include_path="C:/Users/gquiroz/Documents/GitHub/GeorgFischerClinic/ble_workspace_v8/empty_CC2650_LAUNCHXL_TI_CC2650F128" --include_path="C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include"  -IC:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ 
 
 CC = C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl -c $(CCOPTS) -I C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include
 ASM = C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl -c $(CCOPTS) -I C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include

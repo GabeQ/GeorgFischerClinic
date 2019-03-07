@@ -7,7 +7,7 @@
         <srcFile name="package/cfg/app_ble_uartlog_pem3.c"/>
     </sources>
     <configscripts>
-        <srcFile name="C:/Users/gquiroz/workspace_v8/project_zero_app_cc2650launchxl/TOOLS/app_ble_uartlog.cfg"/>
+        <srcFile name="C:/Users/gquiroz/Documents/GitHub/GeorgFischerClinic/ble_workspace_v8/project_zero_app_cc2650launchxl/TOOLS/app_ble_uartlog.cfg"/>
     </configscripts>
     <makefiles>
         <srcFile name="package.mak" src="package.bld"/>
@@ -44,7 +44,7 @@
         isPartial="false"
         xCfgScript="package/cfg/app_ble_uartlog_pem3.cfg"
         xCfgPrefix="package/cfg/app_ble_uartlog_pem3"
-        cfgScript="C:/Users/gquiroz/workspace_v8/project_zero_app_cc2650launchxl/TOOLS/app_ble_uartlog.cfg"
+        cfgScript="C:/Users/gquiroz/Documents/GitHub/GeorgFischerClinic/ble_workspace_v8/project_zero_app_cc2650launchxl/TOOLS/app_ble_uartlog.cfg"
         cfgArgs="null"
         />
     </configurations>
@@ -56,7 +56,7 @@
         profile="release"
         xCfgScript="package/cfg/app_ble_uartlog_pem3.cfg"
         xCfgPrefix="package/cfg/app_ble_uartlog_pem3"
-        cfgScript="C:/Users/gquiroz/workspace_v8/project_zero_app_cc2650launchxl/TOOLS/app_ble_uartlog.cfg"
+        cfgScript="C:/Users/gquiroz/Documents/GitHub/GeorgFischerClinic/ble_workspace_v8/project_zero_app_cc2650launchxl/TOOLS/app_ble_uartlog.cfg"
         cfgArgs="null"
         />
     </executables>

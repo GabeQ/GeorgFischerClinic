@@ -11,12 +11,12 @@ ICallBLE/ble_user_config.obj: c:/ti/simplelink/ble_sdk_2_02_01_18/src/components
 ICallBLE/ble_user_config.obj: c:/ti/simplelink/ble_sdk_2_02_01_18/src/components/hal/src/inc/hal_defs.h
 ICallBLE/ble_user_config.obj: c:/ti/simplelink/ble_sdk_2_02_01_18/src/components/hal/src/target/_common/cc26xx/rf_hal.h
 ICallBLE/ble_user_config.obj: c:/ti/simplelink/ble_sdk_2_02_01_18/src/components/hal/src/target/_common/hal_types.h
-ICallBLE/ble_user_config.obj: C:/Users/gquiroz/workspace_v8/project_zero_app_cc2650launchxl/Board/board.h
+ICallBLE/ble_user_config.obj: C:/Users/gquiroz/Documents/GitHub/GeorgFischerClinic/ble_workspace_v8/project_zero_app_cc2650launchxl/Board/board.h
 ICallBLE/ble_user_config.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/tidrivers_cc13xx_cc26xx_2_20_01_10/packages/ti/drivers/Power.h
 ICallBLE/ble_user_config.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/tidrivers_cc13xx_cc26xx_2_20_01_10/packages/ti/drivers/utils/List.h
 ICallBLE/ble_user_config.obj: C:/ti/ti-cgt-arm_16.9.6.LTS/include/stdbool.h
 ICallBLE/ble_user_config.obj: C:/ti/ti-cgt-arm_16.9.6.LTS/include/stddef.h
-ICallBLE/ble_user_config.obj: C:/Users/gquiroz/workspace_v8/project_zero_app_cc2650launchxl/Board/CC2650_LAUNCHXL.h
+ICallBLE/ble_user_config.obj: C:/Users/gquiroz/Documents/GitHub/GeorgFischerClinic/ble_workspace_v8/project_zero_app_cc2650launchxl/Board/CC2650_LAUNCHXL.h
 ICallBLE/ble_user_config.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/tidrivers_cc13xx_cc26xx_2_20_01_10/packages/ti/drivers/PIN.h
 ICallBLE/ble_user_config.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/std.h
 ICallBLE/ble_user_config.obj: C:/ti/ti-cgt-arm_16.9.6.LTS/include/stdarg.h
@@ -231,12 +231,12 @@ c:/ti/simplelink/ble_sdk_2_02_01_18/src/components/hal/src/target/_common/hal_ty
 c:/ti/simplelink/ble_sdk_2_02_01_18/src/components/hal/src/inc/hal_defs.h: 
 c:/ti/simplelink/ble_sdk_2_02_01_18/src/components/hal/src/target/_common/cc26xx/rf_hal.h: 
 c:/ti/simplelink/ble_sdk_2_02_01_18/src/components/hal/src/target/_common/hal_types.h: 
-C:/Users/gquiroz/workspace_v8/project_zero_app_cc2650launchxl/Board/board.h: 
+C:/Users/gquiroz/Documents/GitHub/GeorgFischerClinic/ble_workspace_v8/project_zero_app_cc2650launchxl/Board/board.h: 
 C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/tidrivers_cc13xx_cc26xx_2_20_01_10/packages/ti/drivers/Power.h: 
 C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/tidrivers_cc13xx_cc26xx_2_20_01_10/packages/ti/drivers/utils/List.h: 
 C:/ti/ti-cgt-arm_16.9.6.LTS/include/stdbool.h: 
 C:/ti/ti-cgt-arm_16.9.6.LTS/include/stddef.h: 
-C:/Users/gquiroz/workspace_v8/project_zero_app_cc2650launchxl/Board/CC2650_LAUNCHXL.h: 
+C:/Users/gquiroz/Documents/GitHub/GeorgFischerClinic/ble_workspace_v8/project_zero_app_cc2650launchxl/Board/CC2650_LAUNCHXL.h: 
 C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/tidrivers_cc13xx_cc26xx_2_20_01_10/packages/ti/drivers/PIN.h: 
 C:/ti/xdctools_3_32_00_06_core/packages/xdc/std.h: 
 C:/ti/ti-cgt-arm_16.9.6.LTS/include/stdarg.h: 

@@ -42,7 +42,6 @@
 #include <ti/sysbios/knl/Queue.h>
 
 #include <ti/drivers/PIN.h>
-#include <ti/drivers/pin/PINCC26XX.h>
 #include <ti/mw/display/Display.h>
 
 #include <xdc/runtime/Log.h>
@@ -71,6 +70,15 @@
 #include "button_service.h"
 #include "data_service.h"
 
+/* SPI Header files*/
+#include <ti/drivers/SPI.h>
+#include <ti/drivers/spi/SPICC26XXDMA.h>
+#include <ti/drivers/dma/UDMACC26XX.h>
+
+/* UART Files*/
+//#include "uart_printf.h"
+//#include <xdc/runtime/System.h>
+
 
 /*********************************************************************
  * CONSTANTS
@@ -91,6 +99,9 @@
 #ifndef PRZ_TASK_STACK_SIZE
 #define PRZ_TASK_STACK_SIZE                   800
 #endif
+#define TASKSTACKSIZE                         1024
+
+
 
 // Internal Events for RTOS application
 #define PRZ_STATE_CHANGE_EVT                  0x0001
@@ -163,6 +174,9 @@ static Queue_Handle hApplicationMsgQ;
 // Task configuration
 Task_Struct przTask;
 Char przTaskStack[PRZ_TASK_STACK_SIZE];
+//for SPI
+Task_Struct task0Struct;
+Char task0Stack[TASKSTACKSIZE];
 
 
 // GAP - SCAN RSP data (max size = 31 bytes)
@@ -187,8 +201,8 @@ static uint8_t advertData[] =
   // complete name
   13,
   GAP_ADTYPE_LOCAL_NAME_COMPLETE,
-  //'g', 'e', 'o', 'r', 'g', 'e',
   'P', 'r', 'o', 'j', 'e', 'c', 't', ' ', 'Z', 'e', 'r', 'o',
+
 };
 
 // GAP GATT Attributes
@@ -213,7 +227,7 @@ static PIN_State ledPinState;
  */
 PIN_Config ledPinTable[] = {
   Board_LED0 | PIN_GPIO_OUTPUT_EN | PIN_GPIO_LOW | PIN_PUSHPULL | PIN_DRVSTR_MAX,
-  PINCC26XX_DIO10 | PIN_GPIO_OUTPUT_EN | PIN_GPIO_HIGH | PIN_PUSHPULL | PIN_DRVSTR_MAX,
+  Board_LED1 | PIN_GPIO_OUTPUT_EN | PIN_GPIO_LOW | PIN_PUSHPULL | PIN_DRVSTR_MAX,
   PIN_TERMINATE
 };
 
@@ -244,6 +258,7 @@ Display_Handle dispHandle;
 
 static void ProjectZero_init( void );
 static void ProjectZero_taskFxn(UArg a0, UArg a1);
+static void spiFxn(UArg a0, UArg a1);
 
 static void user_processApplicationMessage(app_msg_t *pMsg);
 static uint8_t ProjectZero_processStackMsg(ICall_Hdr *pMsg);
@@ -343,9 +358,12 @@ static DataServiceCBs_t user_Data_ServiceCBs =
  *
  * @return  None.
  */
+
+
 void ProjectZero_createTask(void)
 {
   Task_Params taskParams;
+  Task_Params taskSpiParams;
 
   // Configure task
   Task_Params_init(&taskParams);
@@ -354,6 +372,14 @@ void ProjectZero_createTask(void)
   taskParams.priority = PRZ_TASK_PRIORITY;
 
   Task_construct(&przTask, ProjectZero_taskFxn, &taskParams, NULL);
+
+  /* Construct SPI  thread */
+  Task_Params_init(&taskSpiParams);
+  taskSpiParams.arg0 = 1000000 / Clock_tickPeriod;
+  taskSpiParams.stackSize = TASKSTACKSIZE;
+  taskSpiParams.stack = &task0Stack;
+
+  Task_construct(&task0Struct, (Task_FuncPtr)spiFxn, &taskSpiParams, NULL);
 }
 
 /*
@@ -535,6 +561,48 @@ static void ProjectZero_init(void)
 }
 
 
+static void spiFxn(UArg arg0, UArg arg1)
+{
+    // Set up counter
+    int i = 1;
+
+    // Set up SPI handles
+    SPI_Handle spiHandle;
+    SPI_Params spiParams;
+    SPI_Transaction spiTransaction;
+    PIN_Id csnPin0  = PIN_ID(Board_SPI0_CSN);
+    PIN_Id csnPin1  = PIN_ID(Board_SPI1_CSN);
+    int txBuf = 11;    // Transmit buffer
+    //int* pTxBuf = &txBuf;
+
+    // Init SPI and specify non-default parameters
+    SPI_Params_init(&spiParams);
+    spiParams.bitRate     = 1000000;
+    spiParams.frameFormat = SPI_POL1_PHA1;
+    spiParams.mode        = SPI_MASTER;
+
+    // Configure the transaction
+    spiTransaction.count = sizeof(txBuf);
+    spiTransaction.txBuf = &txBuf;
+    spiTransaction.rxBuf = NULL;
+    int txData = *(int*)(spiTransaction.txBuf);
+
+    // Open the SPI
+    spiHandle = SPI_open(Board_SPI0, &spiParams);
+
+
+    while (1) {
+        Log_info1("Data: %d", txData);
+        // Select first chip select pin and perform transfer to the first slave
+        SPI_control(spiHandle, SPICC26XXDMA_SET_CSN_PIN, &csnPin0);
+        SPI_transfer(spiHandle, &spiTransaction);
+        // Then switch chip select pin and perform transfer to the second slave
+        SPI_control(spiHandle, SPICC26XXDMA_SET_CSN_PIN, &csnPin1);
+        SPI_transfer(spiHandle, &spiTransaction);
+        i = i + 1;
+        Task_sleep(10000);
+    }
+}
 /*
  * @brief   Application task entry point.
  *
@@ -560,6 +628,8 @@ static void ProjectZero_taskFxn(UArg a0, UArg a1)
   // Application main loop
   for (;;)
   {
+
+
     // Waits for a signal to the semaphore associated with the calling thread.
     // Note that the semaphore associated with a thread is signaled when a
     // message is queued to the message receive queue of the thread or when

@@ -108,7 +108,7 @@ Void spiFxn(UArg arg0, UArg arg1)
     PIN_Id csnPin0  = PIN_ID(Board_SPI0_CSN);
     PIN_Id csnPin1  = PIN_ID(Board_SPI1_CSN);
     int txBuf = 11;    // Transmit buffer
-    int* pTxBuf = &txBuf;
+
 
     // Init SPI and specify non-default parameters
     SPI_Params_init(&spiParams);
@@ -166,7 +166,7 @@ int main(void)
     taskParams.arg0 = 1000000 / Clock_tickPeriod;
     taskParams.stackSize = TASKSTACKSIZE;
     taskParams.stack = &task0Stack;
-    Task_construct(&task0Struct, (Task_FuncPtr)spiFxn, &taskParams, NULL);
+    Task_construct(&task0Struct, spiFxn, &taskParams, NULL);
 
     /* Open LED pins */
     ledPinHandle = PIN_open(&ledPinState, ledPinTable);

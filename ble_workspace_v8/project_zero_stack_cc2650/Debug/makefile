@@ -36,11 +36,11 @@ ORDERED_OBJS += \
 "./TOOLS/onboard.obj" \
 "../TOOLS/lib_linker.cmd" \
 $(GEN_CMDS__FLAG) \
--l"C:/Users/gquiroz/workspace_v8/project_zero_stack_cc2650/TOOLS/lib_linker.cmd" \
+-l"C:/Users/gquiroz/Documents/GitHub/GeorgFischerClinic/ble_workspace_v8/project_zero_stack_cc2650/TOOLS/lib_linker.cmd" \
 -l"c:/ti/simplelink/ble_sdk_2_02_01_18/src/rom/enc_lib/cc26xx_ecc_rom_api.a" \
 -l"c:/ti/simplelink/ble_sdk_2_02_01_18/src/rom/ble_rom_releases/04242014/ble_rom_patch.symbols" \
 -l"c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/driverlib/bin/ccs/driverlib.lib" \
--l"C:/Users/gquiroz/workspace_v8/project_zero_stack_cc2650/TOOLS/ccs_linker_defines.cmd" \
+-l"C:/Users/gquiroz/Documents/GitHub/GeorgFischerClinic/ble_workspace_v8/project_zero_stack_cc2650/TOOLS/ccs_linker_defines.cmd" \
 -l"c:/ti/simplelink/ble_sdk_2_02_01_18/src/common/cc26xx/ccs/cc26xx_stack.cmd" \
 -llibc.a \
 
@@ -190,7 +190,7 @@ main-build: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 project_zero_stack_cc2650.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 	@echo 'Building target: "$@"'
 	@echo 'Invoking: ARM Linker'
-	"C:/ti/ti-cgt-arm_16.9.6.LTS/bin/armcl" --cmd_file="c:/ti/simplelink/ble_sdk_2_02_01_18/src/config/build_components.opt" --cmd_file="C:/Users/gquiroz/workspace_v8/project_zero_stack_cc2650/TOOLS/build_config.opt"  -mv7M3 --code_state=16 -me -O4 --opt_for_speed=0 --define=USE_ICALL --define=OSAL_SNV=1 --define=FLASH_ROM_BUILD --define=POWER_SAVING --define=GATT_NO_CLIENT --define=INCLUDE_AES_DECRYPT --define=xPM_DISABLE_PWRDOWN --define=xTESTMODES --define=xTEST_BLEBOARD --define=OSAL_CBTIMER_NUM_TASKS=1 --define=xDEBUG --define=EXT_HAL_ASSERT --define=xDEBUG_GPIO --define=xDEBUG_ENC --define=xDEBUG_SW_TRACE --define=NEAR_FUNC= --define=DATA= --define=CC26XXWARE --define=CC26XX -g --c99 --gcc --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi -z -m"project_zero_stack_cc2650.map" --heap_size=0 --stack_size=256 -i"C:/ti/ti-cgt-arm_16.9.6.LTS/lib" -i"C:/ti/ti-cgt-arm_16.9.6.LTS/include" --reread_libs --diag_suppress=16002-D --diag_suppress=10247-D --diag_suppress=10325-D --diag_suppress=10229-D --diag_suppress=16004-D --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_zero_stack_cc2650_linkInfo.xml" --entry_point=startup_entry --rom_model -o "project_zero_stack_cc2650.out" $(ORDERED_OBJS)
+	"C:/ti/ti-cgt-arm_16.9.6.LTS/bin/armcl" --cmd_file="c:/ti/simplelink/ble_sdk_2_02_01_18/src/config/build_components.opt" --cmd_file="C:/Users/gquiroz/Documents/GitHub/GeorgFischerClinic/ble_workspace_v8/project_zero_stack_cc2650/TOOLS/build_config.opt"  -mv7M3 --code_state=16 -me -O4 --opt_for_speed=0 --define=USE_ICALL --define=OSAL_SNV=1 --define=FLASH_ROM_BUILD --define=POWER_SAVING --define=GATT_NO_CLIENT --define=INCLUDE_AES_DECRYPT --define=xPM_DISABLE_PWRDOWN --define=xTESTMODES --define=xTEST_BLEBOARD --define=OSAL_CBTIMER_NUM_TASKS=1 --define=xDEBUG --define=EXT_HAL_ASSERT --define=xDEBUG_GPIO --define=xDEBUG_ENC --define=xDEBUG_SW_TRACE --define=NEAR_FUNC= --define=DATA= --define=CC26XXWARE --define=CC26XX -g --c99 --gcc --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi -z -m"project_zero_stack_cc2650.map" --heap_size=0 --stack_size=256 -i"C:/ti/ti-cgt-arm_16.9.6.LTS/lib" -i"C:/ti/ti-cgt-arm_16.9.6.LTS/include" --reread_libs --diag_suppress=16002-D --diag_suppress=10247-D --diag_suppress=10325-D --diag_suppress=10229-D --diag_suppress=16004-D --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_zero_stack_cc2650_linkInfo.xml" --entry_point=startup_entry --rom_model -o "project_zero_stack_cc2650.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: "$@"'
 	@echo ' '
 	@$(MAKE) --no-print-directory post-build
@@ -212,12 +212,12 @@ clean:
 	-@echo ' '
 
 pre-build:
-	-"c:/ti/simplelink/ble_sdk_2_02_01_18/tools/lib_search/lib_search.exe" C:/Users/gquiroz/workspace_v8/project_zero_stack_cc2650/TOOLS/build_config.opt "c:/ti/simplelink/ble_sdk_2_02_01_18/tools/lib_search/params_split_cc2640.xml" c:/ti/simplelink/ble_sdk_2_02_01_18/blelib "C:/Users/gquiroz/workspace_v8/project_zero_stack_cc2650/TOOLS/lib_linker.cmd"
+	-"c:/ti/simplelink/ble_sdk_2_02_01_18/tools/lib_search/lib_search.exe" C:/Users/gquiroz/Documents/GitHub/GeorgFischerClinic/ble_workspace_v8/project_zero_stack_cc2650/TOOLS/build_config.opt "c:/ti/simplelink/ble_sdk_2_02_01_18/tools/lib_search/params_split_cc2640.xml" c:/ti/simplelink/ble_sdk_2_02_01_18/blelib "C:/Users/gquiroz/Documents/GitHub/GeorgFischerClinic/ble_workspace_v8/project_zero_stack_cc2650/TOOLS/lib_linker.cmd"
 	-@echo ' '
 
 post-build:
 	-C:/ti/ti-cgt-arm_16.9.6.LTS/bin/armhex -order MS --memwidth=8 --romwidth=8 --intel -o project_zero_stack_cc2650.hex project_zero_stack_cc2650.out
-	-c:/ti/simplelink/ble_sdk_2_02_01_18/tools/frontier/frontier.exe ccs C:/Users/gquiroz/workspace_v8/project_zero_stack_cc2650/Debug/project_zero_stack_cc2650_linkInfo.xml C:/Users/gquiroz/workspace_v8/project_zero_stack_cc2650/TOOLS/ccs_compiler_defines.bcfg C:/Users/gquiroz/workspace_v8/project_zero_stack_cc2650/TOOLS/ccs_linker_defines.cmd
+	-c:/ti/simplelink/ble_sdk_2_02_01_18/tools/frontier/frontier.exe ccs C:/Users/gquiroz/Documents/GitHub/GeorgFischerClinic/ble_workspace_v8/project_zero_stack_cc2650/Debug/project_zero_stack_cc2650_linkInfo.xml C:/Users/gquiroz/Documents/GitHub/GeorgFischerClinic/ble_workspace_v8/project_zero_stack_cc2650/TOOLS/ccs_compiler_defines.bcfg C:/Users/gquiroz/Documents/GitHub/GeorgFischerClinic/ble_workspace_v8/project_zero_stack_cc2650/TOOLS/ccs_linker_defines.cmd
 	-@echo ' '
 
 .PHONY: all clean dependents

@@ -153,50 +153,6 @@ Application/project_zero.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bio
 Application/project_zero.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/tidrivers_cc13xx_cc26xx_2_20_01_10/packages/ti/drivers/PIN.h
 Application/project_zero.obj: C:/ti/ti-cgt-arm_16.9.6.LTS/include/stdbool.h
 Application/project_zero.obj: C:/ti/ti-cgt-arm_16.9.6.LTS/include/stddef.h
-Application/project_zero.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/tidrivers_cc13xx_cc26xx_2_20_01_10/packages/ti/drivers/pin/PINCC26XX.h
-Application/project_zero.obj: c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/driverlib/ioc.h
-Application/project_zero.obj: c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/inc/hw_types.h
-Application/project_zero.obj: c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/inc/hw_chip_def.h
-Application/project_zero.obj: c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/inc/hw_memmap.h
-Application/project_zero.obj: c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/inc/hw_ioc.h
-Application/project_zero.obj: c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/inc/hw_ints.h
-Application/project_zero.obj: c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/driverlib/interrupt.h
-Application/project_zero.obj: c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/inc/hw_nvic.h
-Application/project_zero.obj: c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/driverlib/debug.h
-Application/project_zero.obj: c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/driverlib/cpu.h
-Application/project_zero.obj: c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/inc/hw_cpu_scs.h
-Application/project_zero.obj: c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/driverlib/rom.h
-Application/project_zero.obj: c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/driverlib/gpio.h
-Application/project_zero.obj: c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/inc/hw_gpio.h
-Application/project_zero.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/family/arm/m3/Hwi.h
-Application/project_zero.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h
-Application/project_zero.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IInstance.h
-Application/project_zero.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/family/arm/m3/Hwi__prologue.h
-Application/project_zero.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/family/arm/m3/package/package.defs.h
-Application/project_zero.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Diags.h
-Application/project_zero.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Log.h
-Application/project_zero.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Assert.h
-Application/project_zero.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Error.h
-Application/project_zero.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/BIOS.h
-Application/project_zero.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h
-Application/project_zero.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/BIOS__prologue.h
-Application/project_zero.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/package/package.defs.h
-Application/project_zero.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Error.h
-Application/project_zero.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h
-Application/project_zero.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IModule.h
-Application/project_zero.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IGateProvider.h
-Application/project_zero.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/package/BIOS_RtsGateProxy.h
-Application/project_zero.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h
-Application/project_zero.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IInstance.h
-Application/project_zero.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IGateProvider.h
-Application/project_zero.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/BIOS__epilogue.h
-Application/project_zero.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/interfaces/IHwi.h
-Application/project_zero.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h
-Application/project_zero.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IInstance.h
-Application/project_zero.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Error.h
-Application/project_zero.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IModule.h
-Application/project_zero.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/family/arm/m3/Hwi__epilogue.h
-Application/project_zero.obj: C:/ti/ti-cgt-arm_16.9.6.LTS/include/stddef.h
 Application/project_zero.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/tidrivers_cc13xx_cc26xx_2_20_01_10/packages/ti/mw/display/Display.h
 Application/project_zero.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Log.h
 Application/project_zero.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Diags.h
@@ -229,24 +185,80 @@ Application/project_zero.obj: c:/ti/simplelink/ble_sdk_2_02_01_18/src/inc/gattse
 Application/project_zero.obj: c:/ti/simplelink/ble_sdk_2_02_01_18/src/components/osal/src/inc/osal_snv.h
 Application/project_zero.obj: c:/ti/simplelink/ble_sdk_2_02_01_18/src/components/hal/src/target/_common/hal_types.h
 Application/project_zero.obj: c:/ti/simplelink/ble_sdk_2_02_01_18/src/profiles/roles/gapbondmgr.h
-Application/project_zero.obj: C:/Users/gquiroz/workspace_v8/project_zero_app_cc2650launchxl/Profiles/peripheral.h
+Application/project_zero.obj: C:/Users/gquiroz/Documents/GitHub/GeorgFischerClinic/ble_workspace_v8/project_zero_app_cc2650launchxl/Profiles/peripheral.h
 Application/project_zero.obj: c:/ti/simplelink/ble_sdk_2_02_01_18/src/icall/inc/icall_apimsg.h
 Application/project_zero.obj: c:/ti/simplelink/ble_sdk_2_02_01_18/src/inc/linkdb.h
-Application/project_zero.obj: C:/Users/gquiroz/workspace_v8/project_zero_app_cc2650launchxl/Profiles/devinfoservice.h
+Application/project_zero.obj: C:/Users/gquiroz/Documents/GitHub/GeorgFischerClinic/ble_workspace_v8/project_zero_app_cc2650launchxl/Profiles/devinfoservice.h
 Application/project_zero.obj: c:/ti/simplelink/ble_sdk_2_02_01_18/src/common/cc26xx/util.h
 Application/project_zero.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/knl/Clock.h
 Application/project_zero.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/knl/package/Clock_TimerProxy.h
 Application/project_zero.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/knl/Queue.h
 Application/project_zero.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/knl/Semaphore.h
-Application/project_zero.obj: C:/Users/gquiroz/workspace_v8/project_zero_app_cc2650launchxl/Board/Board.h
+Application/project_zero.obj: C:/Users/gquiroz/Documents/GitHub/GeorgFischerClinic/ble_workspace_v8/project_zero_app_cc2650launchxl/Board/Board.h
 Application/project_zero.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/tidrivers_cc13xx_cc26xx_2_20_01_10/packages/ti/drivers/Power.h
 Application/project_zero.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/tidrivers_cc13xx_cc26xx_2_20_01_10/packages/ti/drivers/utils/List.h
 Application/project_zero.obj: C:/ti/ti-cgt-arm_16.9.6.LTS/include/stddef.h
-Application/project_zero.obj: C:/Users/gquiroz/workspace_v8/project_zero_app_cc2650launchxl/Board/CC2650_LAUNCHXL.h
+Application/project_zero.obj: C:/Users/gquiroz/Documents/GitHub/GeorgFischerClinic/ble_workspace_v8/project_zero_app_cc2650launchxl/Board/CC2650_LAUNCHXL.h
+Application/project_zero.obj: c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/driverlib/ioc.h
+Application/project_zero.obj: c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/inc/hw_types.h
+Application/project_zero.obj: c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/inc/hw_chip_def.h
+Application/project_zero.obj: c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/inc/hw_memmap.h
+Application/project_zero.obj: c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/inc/hw_ioc.h
+Application/project_zero.obj: c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/inc/hw_ints.h
+Application/project_zero.obj: c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/driverlib/interrupt.h
+Application/project_zero.obj: c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/inc/hw_nvic.h
+Application/project_zero.obj: c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/driverlib/debug.h
+Application/project_zero.obj: c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/driverlib/cpu.h
+Application/project_zero.obj: c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/inc/hw_cpu_scs.h
+Application/project_zero.obj: c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/driverlib/rom.h
+Application/project_zero.obj: c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/driverlib/gpio.h
+Application/project_zero.obj: c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/inc/hw_gpio.h
 Application/project_zero.obj: ../Application/project_zero.h
-Application/project_zero.obj: C:/Users/gquiroz/workspace_v8/project_zero_app_cc2650launchxl/Profiles/led_service.h
-Application/project_zero.obj: C:/Users/gquiroz/workspace_v8/project_zero_app_cc2650launchxl/Profiles/button_service.h
-Application/project_zero.obj: C:/Users/gquiroz/workspace_v8/project_zero_app_cc2650launchxl/Profiles/data_service.h
+Application/project_zero.obj: C:/Users/gquiroz/Documents/GitHub/GeorgFischerClinic/ble_workspace_v8/project_zero_app_cc2650launchxl/Profiles/led_service.h
+Application/project_zero.obj: C:/Users/gquiroz/Documents/GitHub/GeorgFischerClinic/ble_workspace_v8/project_zero_app_cc2650launchxl/Profiles/button_service.h
+Application/project_zero.obj: C:/Users/gquiroz/Documents/GitHub/GeorgFischerClinic/ble_workspace_v8/project_zero_app_cc2650launchxl/Profiles/data_service.h
+Application/project_zero.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/tidrivers_cc13xx_cc26xx_2_20_01_10/packages/ti/drivers/SPI.h
+Application/project_zero.obj: C:/ti/ti-cgt-arm_16.9.6.LTS/include/stddef.h
+Application/project_zero.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/tidrivers_cc13xx_cc26xx_2_20_01_10/packages/ti/drivers/spi/SPICC26XXDMA.h
+Application/project_zero.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/tidrivers_cc13xx_cc26xx_2_20_01_10/packages/ti/drivers/pin/PINCC26XX.h
+Application/project_zero.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/family/arm/m3/Hwi.h
+Application/project_zero.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h
+Application/project_zero.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IInstance.h
+Application/project_zero.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/family/arm/m3/Hwi__prologue.h
+Application/project_zero.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/family/arm/m3/package/package.defs.h
+Application/project_zero.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Diags.h
+Application/project_zero.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Log.h
+Application/project_zero.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Assert.h
+Application/project_zero.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Error.h
+Application/project_zero.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/BIOS.h
+Application/project_zero.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h
+Application/project_zero.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/BIOS__prologue.h
+Application/project_zero.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/package/package.defs.h
+Application/project_zero.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Error.h
+Application/project_zero.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h
+Application/project_zero.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IModule.h
+Application/project_zero.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IGateProvider.h
+Application/project_zero.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/package/BIOS_RtsGateProxy.h
+Application/project_zero.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h
+Application/project_zero.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IInstance.h
+Application/project_zero.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IGateProvider.h
+Application/project_zero.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/BIOS__epilogue.h
+Application/project_zero.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/interfaces/IHwi.h
+Application/project_zero.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h
+Application/project_zero.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IInstance.h
+Application/project_zero.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Error.h
+Application/project_zero.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IModule.h
+Application/project_zero.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/family/arm/m3/Hwi__epilogue.h
+Application/project_zero.obj: C:/ti/ti-cgt-arm_16.9.6.LTS/include/stddef.h
+Application/project_zero.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/tidrivers_cc13xx_cc26xx_2_20_01_10/packages/ti/drivers/dma/UDMACC26XX.h
+Application/project_zero.obj: c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/driverlib/udma.h
+Application/project_zero.obj: c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/inc/hw_udma.h
+Application/project_zero.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/tidrivers_cc13xx_cc26xx_2_20_01_10/packages/ti/drivers/power/PowerCC26XX.h
+Application/project_zero.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/family/arm/m3/Hwi.h
+Application/project_zero.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/knl/Clock.h
+Application/project_zero.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/knl/Semaphore.h
+Application/project_zero.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/knl/Swi.h
+Application/project_zero.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/family/arm/m3/Hwi.h
 
 ../Application/project_zero.c: 
 C:/ti/ti-cgt-arm_16.9.6.LTS/include/string.h: 
@@ -401,50 +413,6 @@ C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbi
 C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/tidrivers_cc13xx_cc26xx_2_20_01_10/packages/ti/drivers/PIN.h: 
 C:/ti/ti-cgt-arm_16.9.6.LTS/include/stdbool.h: 
 C:/ti/ti-cgt-arm_16.9.6.LTS/include/stddef.h: 
-C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/tidrivers_cc13xx_cc26xx_2_20_01_10/packages/ti/drivers/pin/PINCC26XX.h: 
-c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/driverlib/ioc.h: 
-c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/inc/hw_types.h: 
-c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/inc/hw_chip_def.h: 
-c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/inc/hw_memmap.h: 
-c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/inc/hw_ioc.h: 
-c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/inc/hw_ints.h: 
-c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/driverlib/interrupt.h: 
-c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/inc/hw_nvic.h: 
-c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/driverlib/debug.h: 
-c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/driverlib/cpu.h: 
-c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/inc/hw_cpu_scs.h: 
-c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/driverlib/rom.h: 
-c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/driverlib/gpio.h: 
-c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/inc/hw_gpio.h: 
-C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/family/arm/m3/Hwi.h: 
-C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h: 
-C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IInstance.h: 
-C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/family/arm/m3/Hwi__prologue.h: 
-C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/family/arm/m3/package/package.defs.h: 
-C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Diags.h: 
-C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Log.h: 
-C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Assert.h: 
-C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Error.h: 
-C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/BIOS.h: 
-C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h: 
-C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/BIOS__prologue.h: 
-C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/package/package.defs.h: 
-C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Error.h: 
-C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h: 
-C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IModule.h: 
-C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IGateProvider.h: 
-C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/package/BIOS_RtsGateProxy.h: 
-C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h: 
-C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IInstance.h: 
-C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IGateProvider.h: 
-C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/BIOS__epilogue.h: 
-C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/interfaces/IHwi.h: 
-C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h: 
-C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IInstance.h: 
-C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Error.h: 
-C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IModule.h: 
-C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/family/arm/m3/Hwi__epilogue.h: 
-C:/ti/ti-cgt-arm_16.9.6.LTS/include/stddef.h: 
 C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/tidrivers_cc13xx_cc26xx_2_20_01_10/packages/ti/mw/display/Display.h: 
 C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Log.h: 
 C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Diags.h: 
@@ -477,21 +445,77 @@ c:/ti/simplelink/ble_sdk_2_02_01_18/src/inc/gattservapp.h:
 c:/ti/simplelink/ble_sdk_2_02_01_18/src/components/osal/src/inc/osal_snv.h: 
 c:/ti/simplelink/ble_sdk_2_02_01_18/src/components/hal/src/target/_common/hal_types.h: 
 c:/ti/simplelink/ble_sdk_2_02_01_18/src/profiles/roles/gapbondmgr.h: 
-C:/Users/gquiroz/workspace_v8/project_zero_app_cc2650launchxl/Profiles/peripheral.h: 
+C:/Users/gquiroz/Documents/GitHub/GeorgFischerClinic/ble_workspace_v8/project_zero_app_cc2650launchxl/Profiles/peripheral.h: 
 c:/ti/simplelink/ble_sdk_2_02_01_18/src/icall/inc/icall_apimsg.h: 
 c:/ti/simplelink/ble_sdk_2_02_01_18/src/inc/linkdb.h: 
-C:/Users/gquiroz/workspace_v8/project_zero_app_cc2650launchxl/Profiles/devinfoservice.h: 
+C:/Users/gquiroz/Documents/GitHub/GeorgFischerClinic/ble_workspace_v8/project_zero_app_cc2650launchxl/Profiles/devinfoservice.h: 
 c:/ti/simplelink/ble_sdk_2_02_01_18/src/common/cc26xx/util.h: 
 C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/knl/Clock.h: 
 C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/knl/package/Clock_TimerProxy.h: 
 C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/knl/Queue.h: 
 C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/knl/Semaphore.h: 
-C:/Users/gquiroz/workspace_v8/project_zero_app_cc2650launchxl/Board/Board.h: 
+C:/Users/gquiroz/Documents/GitHub/GeorgFischerClinic/ble_workspace_v8/project_zero_app_cc2650launchxl/Board/Board.h: 
 C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/tidrivers_cc13xx_cc26xx_2_20_01_10/packages/ti/drivers/Power.h: 
 C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/tidrivers_cc13xx_cc26xx_2_20_01_10/packages/ti/drivers/utils/List.h: 
 C:/ti/ti-cgt-arm_16.9.6.LTS/include/stddef.h: 
-C:/Users/gquiroz/workspace_v8/project_zero_app_cc2650launchxl/Board/CC2650_LAUNCHXL.h: 
+C:/Users/gquiroz/Documents/GitHub/GeorgFischerClinic/ble_workspace_v8/project_zero_app_cc2650launchxl/Board/CC2650_LAUNCHXL.h: 
+c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/driverlib/ioc.h: 
+c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/inc/hw_types.h: 
+c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/inc/hw_chip_def.h: 
+c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/inc/hw_memmap.h: 
+c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/inc/hw_ioc.h: 
+c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/inc/hw_ints.h: 
+c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/driverlib/interrupt.h: 
+c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/inc/hw_nvic.h: 
+c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/driverlib/debug.h: 
+c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/driverlib/cpu.h: 
+c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/inc/hw_cpu_scs.h: 
+c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/driverlib/rom.h: 
+c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/driverlib/gpio.h: 
+c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/inc/hw_gpio.h: 
 ../Application/project_zero.h: 
-C:/Users/gquiroz/workspace_v8/project_zero_app_cc2650launchxl/Profiles/led_service.h: 
-C:/Users/gquiroz/workspace_v8/project_zero_app_cc2650launchxl/Profiles/button_service.h: 
-C:/Users/gquiroz/workspace_v8/project_zero_app_cc2650launchxl/Profiles/data_service.h: 
+C:/Users/gquiroz/Documents/GitHub/GeorgFischerClinic/ble_workspace_v8/project_zero_app_cc2650launchxl/Profiles/led_service.h: 
+C:/Users/gquiroz/Documents/GitHub/GeorgFischerClinic/ble_workspace_v8/project_zero_app_cc2650launchxl/Profiles/button_service.h: 
+C:/Users/gquiroz/Documents/GitHub/GeorgFischerClinic/ble_workspace_v8/project_zero_app_cc2650launchxl/Profiles/data_service.h: 
+C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/tidrivers_cc13xx_cc26xx_2_20_01_10/packages/ti/drivers/SPI.h: 
+C:/ti/ti-cgt-arm_16.9.6.LTS/include/stddef.h: 
+C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/tidrivers_cc13xx_cc26xx_2_20_01_10/packages/ti/drivers/spi/SPICC26XXDMA.h: 
+C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/tidrivers_cc13xx_cc26xx_2_20_01_10/packages/ti/drivers/pin/PINCC26XX.h: 
+C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/family/arm/m3/Hwi.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IInstance.h: 
+C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/family/arm/m3/Hwi__prologue.h: 
+C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/family/arm/m3/package/package.defs.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Diags.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Log.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Assert.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Error.h: 
+C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/BIOS.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h: 
+C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/BIOS__prologue.h: 
+C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/package/package.defs.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Error.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IModule.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IGateProvider.h: 
+C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/package/BIOS_RtsGateProxy.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IInstance.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IGateProvider.h: 
+C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/BIOS__epilogue.h: 
+C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/interfaces/IHwi.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IInstance.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Error.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IModule.h: 
+C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/family/arm/m3/Hwi__epilogue.h: 
+C:/ti/ti-cgt-arm_16.9.6.LTS/include/stddef.h: 
+C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/tidrivers_cc13xx_cc26xx_2_20_01_10/packages/ti/drivers/dma/UDMACC26XX.h: 
+c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/driverlib/udma.h: 
+c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/inc/hw_udma.h: 
+C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/tidrivers_cc13xx_cc26xx_2_20_01_10/packages/ti/drivers/power/PowerCC26XX.h: 
+C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/family/arm/m3/Hwi.h: 
+C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/knl/Clock.h: 
+C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/knl/Semaphore.h: 
+C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/knl/Swi.h: 
+C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/family/arm/m3/Hwi.h: 

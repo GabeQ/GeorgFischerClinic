@@ -32,7 +32,7 @@ ORDERED_OBJS += \
 $(GEN_CMDS__FLAG) \
 -l"c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/driverlib/bin/ccs/driverlib.lib" \
 -l"c:/ti/simplelink/ble_sdk_2_02_01_18/src/rom/common_rom_releases/03282014/common_rom.symbols" \
--l"C:/Users/gquiroz/workspace_v8/project_zero_stack_cc2650/TOOLS/ccs_linker_defines.cmd" \
+-l"C:/Users/gquiroz/Documents/GitHub/GeorgFischerClinic/ble_workspace_v8/project_zero_stack_cc2650/TOOLS/ccs_linker_defines.cmd" \
 -l"c:/ti/simplelink/ble_sdk_2_02_01_18/src/common/cc26xx/ccs/cc26xx_app.cmd" \
 -llibc.a \
 
@@ -176,13 +176,13 @@ all: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 	@$(MAKE) --no-print-directory -Onone "project_zero_app_cc2650launchxl.out"
 
 dependents:
-	-cd C:/Users/gquiroz/workspace_v8/project_zero_stack_cc2650/Debug && $(MAKE) all
+	-cd C:/Users/gquiroz/Documents/GitHub/GeorgFischerClinic/ble_workspace_v8/project_zero_stack_cc2650/Debug && $(MAKE) clean all
 
 # Tool invocations
-project_zero_app_cc2650launchxl.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS) C:/Users/gquiroz/workspace_v8/project_zero_stack_cc2650/Debug/project_zero_stack_cc2650.out
+project_zero_app_cc2650launchxl.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS) C:/Users/gquiroz/Documents/GitHub/GeorgFischerClinic/ble_workspace_v8/project_zero_stack_cc2650/Debug/project_zero_stack_cc2650.out
 	@echo 'Building target: "$@"'
 	@echo 'Invoking: ARM Linker'
-	"C:/ti/ti-cgt-arm_16.9.6.LTS/bin/armcl" --cmd_file="c:/ti/simplelink/ble_sdk_2_02_01_18/src/config/build_components.opt" --cmd_file="C:/Users/gquiroz/workspace_v8/project_zero_stack_cc2650/TOOLS/build_config.opt" --cmd_file="C:/Users/gquiroz/workspace_v8/project_zero_stack_cc2650/TOOLS/ccs_compiler_defines.bcfg"  -mv7M3 --code_state=16 -me -O4 --opt_for_speed=0 --define=USE_ICALL --define=POWER_SAVING --define=SBP_TASK_STACK_SIZE=700 --define=GAPROLE_TASK_STACK_SIZE=520 --define=HEAPMGR_SIZE=0 --define=Display_DISABLE_ALL --define=BOARD_DISPLAY_EXCLUDE_UART --define=xBOARD_DISPLAY_EXCLUDE_LCD --define=ICALL_MAX_NUM_TASKS=3 --define=ICALL_MAX_NUM_ENTITIES=6 --define=xdc_runtime_Assert_DISABLE_ALL --define=Xxdc_runtime_Log_DISABLE_ALL --define=MAX_NUM_BLE_CONNS=1 --define=CC26XX --define=xdc_FILE="\"\"" --define=UARTLOG_NUM_EVT_BUF=32 -g --c99 --gcc --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi -z -m"project_zero_app_cc2650launchxl.map" --heap_size=0 --stack_size=256 -i"C:/ti/ti-cgt-arm_16.9.6.LTS/lib" -i"C:/ti/ti-cgt-arm_16.9.6.LTS/include" --reread_libs --diag_suppress=16002-D --diag_suppress=10247-D --diag_suppress=10325-D --diag_suppress=10229-D --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_zero_app_cc2650launchxl_linkInfo.xml" --rom_model -o "project_zero_app_cc2650launchxl.out" $(ORDERED_OBJS)
+	"C:/ti/ti-cgt-arm_16.9.6.LTS/bin/armcl" --cmd_file="c:/ti/simplelink/ble_sdk_2_02_01_18/src/config/build_components.opt" --cmd_file="C:/Users/gquiroz/Documents/GitHub/GeorgFischerClinic/ble_workspace_v8/project_zero_stack_cc2650/TOOLS/build_config.opt" --cmd_file="C:/Users/gquiroz/Documents/GitHub/GeorgFischerClinic/ble_workspace_v8/project_zero_stack_cc2650/TOOLS/ccs_compiler_defines.bcfg"  -mv7M3 --code_state=16 -me -O4 --opt_for_speed=0 --define=USE_ICALL --define=POWER_SAVING --define=SBP_TASK_STACK_SIZE=700 --define=GAPROLE_TASK_STACK_SIZE=520 --define=HEAPMGR_SIZE=0 --define=Display_DISABLE_ALL --define=BOARD_DISPLAY_EXCLUDE_UART --define=xBOARD_DISPLAY_EXCLUDE_LCD --define=ICALL_MAX_NUM_TASKS=3 --define=ICALL_MAX_NUM_ENTITIES=6 --define=xdc_runtime_Assert_DISABLE_ALL --define=Xxdc_runtime_Log_DISABLE_ALL --define=MAX_NUM_BLE_CONNS=1 --define=CC26XX --define=xdc_FILE="\"\"" --define=UARTLOG_NUM_EVT_BUF=32 -g --c99 --gcc --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi -z -m"project_zero_app_cc2650launchxl.map" --heap_size=0 --stack_size=256 -i"C:/ti/ti-cgt-arm_16.9.6.LTS/lib" -i"C:/ti/ti-cgt-arm_16.9.6.LTS/include" --reread_libs --diag_suppress=16002-D --diag_suppress=10247-D --diag_suppress=10325-D --diag_suppress=10229-D --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_zero_app_cc2650launchxl_linkInfo.xml" --rom_model -o "project_zero_app_cc2650launchxl.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: "$@"'
 	@echo ' '
 	@$(MAKE) --no-print-directory post-build
@@ -210,7 +210,7 @@ post-build:
 
 .PHONY: all clean dependents
 .SECONDARY:
-C:/Users/gquiroz/workspace_v8/project_zero_stack_cc2650/Debug/project_zero_stack_cc2650.out:
+C:/Users/gquiroz/Documents/GitHub/GeorgFischerClinic/ble_workspace_v8/project_zero_stack_cc2650/Debug/project_zero_stack_cc2650.out:
 
 -include ../makefile.targets
 

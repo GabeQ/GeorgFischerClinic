@@ -11,7 +11,7 @@ var makeAssembly = false;
 var Executable = xdc.module('xdc.bld.Executable');
 
 var exeOpts = new Executable.Attrs({
-        cfgScript: 'C:/Users/gquiroz/workspace_v8/project_zero_app_cc2650launchxl/TOOLS/app_ble_uartlog.cfg',
+        cfgScript: 'C:/Users/gquiroz/Documents/GitHub/GeorgFischerClinic/ble_workspace_v8/project_zero_app_cc2650launchxl/TOOLS/app_ble_uartlog.cfg',
         profile: 'release',
         cfgHome: 'configPkg',
 });
@@ -41,7 +41,7 @@ else {
 
 var thisObj = {
     cfg:        '../TOOLS/app_ble_uartlog.cfg',
-    outputPath: 'C:/Users/gquiroz/workspace_v8/project_zero_app_cc2650launchxl/Debug/configPkg',
+    outputPath: 'C:/Users/gquiroz/Documents/GitHub/GeorgFischerClinic/ble_workspace_v8/project_zero_app_cc2650launchxl/Debug/configPkg',
     exeName:    'app_ble_uartlog' + suffix,
     exeIntName: 'app_ble_uartlog' + suffix.replace('.', '_'),
     targ:       targ,

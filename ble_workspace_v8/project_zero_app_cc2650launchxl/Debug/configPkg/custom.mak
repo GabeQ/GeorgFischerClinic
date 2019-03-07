@@ -7,5 +7,5 @@
 #       or equal to the generated config header
 #
 linker.cmd: package/cfg/app_ble_uartlog_pem3.xdl
-	$(SED) 's"^\"\(package/cfg/app_ble_uartlog_pem3cfg.cmd\)\"$""\"C:/Users/gquiroz/workspace_v8/project_zero_app_cc2650launchxl/Debug/configPkg/\1\""' package/cfg/app_ble_uartlog_pem3.xdl > $@
+	$(SED) 's"^\"\(package/cfg/app_ble_uartlog_pem3cfg.cmd\)\"$""\"C:/Users/gquiroz/Documents/GitHub/GeorgFischerClinic/ble_workspace_v8/project_zero_app_cc2650launchxl/Debug/configPkg/\1\""' package/cfg/app_ble_uartlog_pem3.xdl > $@
 	-$(SETDATE) -r:max package/cfg/app_ble_uartlog_pem3.h compiler.opt compiler.opt.defs
