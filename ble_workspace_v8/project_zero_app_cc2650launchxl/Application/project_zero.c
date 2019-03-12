@@ -675,7 +675,6 @@ static void spiFxn(UArg arg0, UArg arg1)
     while (1) {
         // ble addition
         spiServiceIwrData = *(int*)(spiTransaction.txBuf);
-        SpiService_SetParameter(SPISERVICE_IWRDATA, SPISERVICE_IWRDATA_LEN, &i);
         Log_info1("Data: %d", spiServiceIwrData);
         // Select first chip select pin and perform transfer to the first slave
         SPI_control(spiHandle, SPICC26XXDMA_SET_CSN_PIN, &csnPin0);
