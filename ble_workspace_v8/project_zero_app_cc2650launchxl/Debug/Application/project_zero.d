@@ -150,6 +150,8 @@ Application/project_zero.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bio
 Application/project_zero.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IModule.h
 Application/project_zero.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/knl/Event__epilogue.h
 Application/project_zero.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/knl/Queue.h
+Application/project_zero.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/knl/Clock.h
+Application/project_zero.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/knl/package/Clock_TimerProxy.h
 Application/project_zero.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/tidrivers_cc13xx_cc26xx_2_20_01_10/packages/ti/drivers/PIN.h
 Application/project_zero.obj: C:/ti/ti-cgt-arm_16.9.6.LTS/include/stdbool.h
 Application/project_zero.obj: C:/ti/ti-cgt-arm_16.9.6.LTS/include/stddef.h
@@ -191,7 +193,6 @@ Application/project_zero.obj: c:/ti/simplelink/ble_sdk_2_02_01_18/src/inc/linkdb
 Application/project_zero.obj: C:/Users/gquiroz/Documents/GitHub/GeorgFischerClinic/ble_workspace_v8/project_zero_app_cc2650launchxl/Profiles/devinfoservice.h
 Application/project_zero.obj: c:/ti/simplelink/ble_sdk_2_02_01_18/src/common/cc26xx/util.h
 Application/project_zero.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/knl/Clock.h
-Application/project_zero.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/knl/package/Clock_TimerProxy.h
 Application/project_zero.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/knl/Queue.h
 Application/project_zero.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/knl/Semaphore.h
 Application/project_zero.obj: C:/Users/gquiroz/Documents/GitHub/GeorgFischerClinic/ble_workspace_v8/project_zero_app_cc2650launchxl/Board/Board.h
@@ -217,6 +218,7 @@ Application/project_zero.obj: ../Application/project_zero.h
 Application/project_zero.obj: C:/Users/gquiroz/Documents/GitHub/GeorgFischerClinic/ble_workspace_v8/project_zero_app_cc2650launchxl/Profiles/led_service.h
 Application/project_zero.obj: C:/Users/gquiroz/Documents/GitHub/GeorgFischerClinic/ble_workspace_v8/project_zero_app_cc2650launchxl/Profiles/button_service.h
 Application/project_zero.obj: C:/Users/gquiroz/Documents/GitHub/GeorgFischerClinic/ble_workspace_v8/project_zero_app_cc2650launchxl/Profiles/data_service.h
+Application/project_zero.obj: ../Application/spiService.h
 Application/project_zero.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/tidrivers_cc13xx_cc26xx_2_20_01_10/packages/ti/drivers/SPI.h
 Application/project_zero.obj: C:/ti/ti-cgt-arm_16.9.6.LTS/include/stddef.h
 Application/project_zero.obj: C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/tidrivers_cc13xx_cc26xx_2_20_01_10/packages/ti/drivers/spi/SPICC26XXDMA.h
@@ -410,6 +412,8 @@ C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbi
 C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IModule.h: 
 C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/knl/Event__epilogue.h: 
 C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/knl/Queue.h: 
+C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/knl/Clock.h: 
+C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/knl/package/Clock_TimerProxy.h: 
 C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/tidrivers_cc13xx_cc26xx_2_20_01_10/packages/ti/drivers/PIN.h: 
 C:/ti/ti-cgt-arm_16.9.6.LTS/include/stdbool.h: 
 C:/ti/ti-cgt-arm_16.9.6.LTS/include/stddef.h: 
@@ -451,7 +455,6 @@ c:/ti/simplelink/ble_sdk_2_02_01_18/src/inc/linkdb.h:
 C:/Users/gquiroz/Documents/GitHub/GeorgFischerClinic/ble_workspace_v8/project_zero_app_cc2650launchxl/Profiles/devinfoservice.h: 
 c:/ti/simplelink/ble_sdk_2_02_01_18/src/common/cc26xx/util.h: 
 C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/knl/Clock.h: 
-C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/knl/package/Clock_TimerProxy.h: 
 C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/knl/Queue.h: 
 C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/knl/Semaphore.h: 
 C:/Users/gquiroz/Documents/GitHub/GeorgFischerClinic/ble_workspace_v8/project_zero_app_cc2650launchxl/Board/Board.h: 
@@ -477,6 +480,7 @@ c:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/inc/hw_g
 C:/Users/gquiroz/Documents/GitHub/GeorgFischerClinic/ble_workspace_v8/project_zero_app_cc2650launchxl/Profiles/led_service.h: 
 C:/Users/gquiroz/Documents/GitHub/GeorgFischerClinic/ble_workspace_v8/project_zero_app_cc2650launchxl/Profiles/button_service.h: 
 C:/Users/gquiroz/Documents/GitHub/GeorgFischerClinic/ble_workspace_v8/project_zero_app_cc2650launchxl/Profiles/data_service.h: 
+../Application/spiService.h: 
 C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/tidrivers_cc13xx_cc26xx_2_20_01_10/packages/ti/drivers/SPI.h: 
 C:/ti/ti-cgt-arm_16.9.6.LTS/include/stddef.h: 
 C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/tidrivers_cc13xx_cc26xx_2_20_01_10/packages/ti/drivers/spi/SPICC26XXDMA.h: 

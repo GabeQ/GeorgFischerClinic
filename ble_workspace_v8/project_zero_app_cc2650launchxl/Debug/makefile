@@ -11,6 +11,7 @@ GEN_CMDS__FLAG := -l"configPkg/linker.cmd"
 
 ORDERED_OBJS += \
 "./Application/project_zero.obj" \
+"./Application/spiService.obj" \
 "./Application/util.obj" \
 "./Board/CC2650_LAUNCHXL.obj" \
 "./Drivers/ECC/ECCROMCC26XX.obj" \
@@ -176,7 +177,7 @@ all: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 	@$(MAKE) --no-print-directory -Onone "project_zero_app_cc2650launchxl.out"
 
 dependents:
-	-cd C:/Users/gquiroz/Documents/GitHub/GeorgFischerClinic/ble_workspace_v8/project_zero_stack_cc2650/Debug && $(MAKE) clean all
+	-cd C:/Users/gquiroz/Documents/GitHub/GeorgFischerClinic/ble_workspace_v8/project_zero_stack_cc2650/Debug && $(MAKE) all
 
 # Tool invocations
 project_zero_app_cc2650launchxl.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS) C:/Users/gquiroz/Documents/GitHub/GeorgFischerClinic/ble_workspace_v8/project_zero_stack_cc2650/Debug/project_zero_stack_cc2650.out
@@ -198,8 +199,8 @@ project_zero_app_cc2650launchxl.hex: $(EXE_OUTPUTS)
 # Other Targets
 clean:
 	-$(RM) $(BIN_OUTPUTS__QUOTED)$(GEN_FILES__QUOTED)$(EXE_OUTPUTS__QUOTED)
-	-$(RM) "Application\project_zero.obj" "Application\util.obj" "Board\CC2650_LAUNCHXL.obj" "Drivers\ECC\ECCROMCC26XX.obj" "Drivers\TRNG\TRNGCC26XX.obj" "ICall\icall.obj" "ICall\icall_cc2650.obj" "ICallBLE\ble_user_config.obj" "ICallBLE\icall_api.obj" "PROFILES\button_service.obj" "PROFILES\data_service.obj" "PROFILES\devinfoservice.obj" "PROFILES\gatt_uuid.obj" "PROFILES\gattservapp_util.obj" "PROFILES\led_service.obj" "PROFILES\peripheral.obj" "Startup\ccfg_app_ble.obj" "Startup\main.obj" "Utils\uart_logs.obj" 
-	-$(RM) "Application\project_zero.d" "Application\util.d" "Board\CC2650_LAUNCHXL.d" "Drivers\ECC\ECCROMCC26XX.d" "Drivers\TRNG\TRNGCC26XX.d" "ICall\icall.d" "ICall\icall_cc2650.d" "ICallBLE\ble_user_config.d" "ICallBLE\icall_api.d" "PROFILES\button_service.d" "PROFILES\data_service.d" "PROFILES\devinfoservice.d" "PROFILES\gatt_uuid.d" "PROFILES\gattservapp_util.d" "PROFILES\led_service.d" "PROFILES\peripheral.d" "Startup\ccfg_app_ble.d" "Startup\main.d" "Utils\uart_logs.d" 
+	-$(RM) "Application\project_zero.obj" "Application\spiService.obj" "Application\util.obj" "Board\CC2650_LAUNCHXL.obj" "Drivers\ECC\ECCROMCC26XX.obj" "Drivers\TRNG\TRNGCC26XX.obj" "ICall\icall.obj" "ICall\icall_cc2650.obj" "ICallBLE\ble_user_config.obj" "ICallBLE\icall_api.obj" "PROFILES\button_service.obj" "PROFILES\data_service.obj" "PROFILES\devinfoservice.obj" "PROFILES\gatt_uuid.obj" "PROFILES\gattservapp_util.obj" "PROFILES\led_service.obj" "PROFILES\peripheral.obj" "Startup\ccfg_app_ble.obj" "Startup\main.obj" "Utils\uart_logs.obj" 
+	-$(RM) "Application\project_zero.d" "Application\spiService.d" "Application\util.d" "Board\CC2650_LAUNCHXL.d" "Drivers\ECC\ECCROMCC26XX.d" "Drivers\TRNG\TRNGCC26XX.d" "ICall\icall.d" "ICall\icall_cc2650.d" "ICallBLE\ble_user_config.d" "ICallBLE\icall_api.d" "PROFILES\button_service.d" "PROFILES\data_service.d" "PROFILES\devinfoservice.d" "PROFILES\gatt_uuid.d" "PROFILES\gattservapp_util.d" "PROFILES\led_service.d" "PROFILES\peripheral.d" "Startup\ccfg_app_ble.d" "Startup\main.d" "Utils\uart_logs.d" 
 	-$(RMDIR) $(GEN_MISC_DIRS__QUOTED)
 	-@echo 'Finished clean'
 	-@echo ' '

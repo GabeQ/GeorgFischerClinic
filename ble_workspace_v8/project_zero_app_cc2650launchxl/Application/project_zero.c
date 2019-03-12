@@ -41,6 +41,9 @@
 #include <ti/sysbios/knl/Semaphore.h>
 #include <ti/sysbios/knl/Queue.h>
 
+// ble addition
+#include <ti/sysbios/knl/Clock.h>
+
 #include <ti/drivers/PIN.h>
 #include <ti/mw/display/Display.h>
 
@@ -69,6 +72,9 @@
 #include "led_service.h"
 #include "button_service.h"
 #include "data_service.h"
+
+// ble addition
+#include "spiService.h"
 
 /* SPI Header files*/
 #include <ti/drivers/SPI.h>
@@ -122,6 +128,7 @@ typedef enum
   APP_MSG_GAP_STATE_CHANGE,    /* The GAP / connection state has changed      */
   APP_MSG_BUTTON_DEBOUNCED,    /* A button has been debounced with new value  */
   APP_MSG_SEND_PASSCODE,       /* A pass-code/PIN is requested during pairing */
+  APP_MSG_PERIODIC_TIMER,      /* Periodic event*/ // ble addition
 } app_msg_types_t;
 
 // Struct for messages sent to the application task
@@ -157,6 +164,17 @@ typedef struct
   uint8_t  state;
 } button_state_t;
 
+// ble addition
+// Struct for messages from a service
+typedef struct
+{
+  Queue_Elem _elem;
+  uint16_t svcUUID;
+  uint16_t dataLen;
+  uint8_t paramID;
+  uint8_t data[]; // Flexible array member, extended to malloc - sizeof(.)
+} server_char_write_t;
+
 /*********************************************************************
  * LOCAL VARIABLES
  */
@@ -171,10 +189,16 @@ static ICall_Semaphore sem;
 static Queue_Struct applicationMsgQ;
 static Queue_Handle hApplicationMsgQ;
 
+// ble addition
+// Queue object used for service messages.
+static Queue_Struct serviceMsgQ;
+static Queue_Handle hServiceMsgQ;
+
 // Task configuration
 Task_Struct przTask;
 Char przTaskStack[PRZ_TASK_STACK_SIZE];
-//for SPI
+
+// spi addition
 Task_Struct task0Struct;
 Char task0Stack[TASKSTACKSIZE];
 
@@ -245,12 +269,20 @@ PIN_Config buttonPinTable[] = {
 static Clock_Struct button0DebounceClock;
 static Clock_Struct button1DebounceClock;
 
+// ble addition
+// Clock object for periodic event
+static Clock_Struct myClock;
+
 // State of the buttons
 static uint8_t button0State = 0;
 static uint8_t button1State = 0;
 
 // Global display handle
 Display_Handle dispHandle;
+
+// ble addition
+// Char1 counter
+uint32_t spiServiceIwrData = 0;
 
 /*********************************************************************
  * LOCAL FUNCTIONS
@@ -302,6 +334,15 @@ static char *Util_convertArrayToHexString(uint8_t const *src, uint8_t src_len,
                                           uint8_t *dst, uint8_t dst_len);
 static char *Util_getLocalNameStr(const uint8_t *data);
 
+// ble addition
+// Declaration of service callback handlers
+static void user_spiServiceValueChangeCB(uint8_t paramID); // Callback from the service.
+static void user_spiService_ValueChangeDispatchHandler(server_char_write_t *pWrite); // Local handler called from the Task context of this task.
+
+// ble addition
+// Declaration of clock callback function
+static void myClockSwiFxn(uintptr_t arg0);
+
 /*********************************************************************
  * PROFILE CALLBACKS
  */
@@ -344,6 +385,12 @@ static DataServiceCBs_t user_Data_ServiceCBs =
 {
   .pfnChangeCb    = user_service_ValueChangeCB, // Characteristic value change callback handler
   .pfnCfgChangeCb = user_service_CfgChangeCB, // Noti/ind configuration callback handler
+};
+
+// ble addition
+static spiServiceCBs_t user_spiServiceCBs =
+{
+  user_spiServiceValueChangeCB
 };
 
 
@@ -410,6 +457,12 @@ static void ProjectZero_init(void)
   Queue_construct(&applicationMsgQ, NULL);
   hApplicationMsgQ = Queue_handle(&applicationMsgQ);
 
+  // ble addition
+  // Initialize queue for service messages.
+  // Note: Used to transfer control to application thread
+  Queue_construct(&serviceMsgQ, NULL);
+  hServiceMsgQ = Queue_handle(&serviceMsgQ);
+
   // ******************************************************************
   // Hardware initialization
   // ******************************************************************
@@ -452,6 +505,15 @@ static void ProjectZero_init(void)
   Clock_construct(&button1DebounceClock, buttonDebounceSwiFxn,
                   50 * (1000/Clock_tickPeriod),
                   &clockParams);
+
+  // ble addition
+  // Periodic Event
+  // Set a period, so it times out periodically without jitter
+  clockParams.period = 1000 * (1000/Clock_tickPeriod), // 1000 ms, conversion from ms to clock ticks. // SOLUTION
+  // Initialize the clock object / Clock_Struct previously added globally.
+  Clock_construct(&myClock, myClockSwiFxn,
+                  0, // Initial delay before first timeout
+                  &clockParams); // SOLUTION
 
   // ******************************************************************
   // BLE Stack initialization
@@ -531,6 +593,24 @@ static void ProjectZero_init(void)
   ButtonService_RegisterAppCBs( &user_Button_ServiceCBs );
   DataService_RegisterAppCBs( &user_Data_ServiceCBs );
 
+  // ble addition
+  // Add SPI Service
+  SpiService_AddService();
+  SpiService_RegisterAppCBs( &user_spiServiceCBs );
+
+  // ble addition
+  // Initial spiService iwr data value, can be set to anything
+  spiServiceIwrData = 0;
+  // Initalization of characteristics in spiService that are readable.
+  SpiService_SetParameter(SPISERVICE_IWRDATA, SPISERVICE_IWRDATA_LEN,
+                               &spiServiceIwrData);
+
+  // ble addition
+  // Initial spiService Char updateperiod value, can be set to anything
+  uint8_t initialVal[2] = {0x11, 0x22};
+  // Initalization of characteristics in spiService that are readable.
+  SpiService_SetParameter(SPISERVICE_UPDATEPERIOD, SPISERVICE_UPDATEPERIOD_LEN, &initialVal);
+
   // Placeholder variable for characteristic intialization
   uint8_t initVal[40] = {0};
   uint8_t initString[] = "This is a pretty long string, isn't it!";
@@ -546,6 +626,9 @@ static void ProjectZero_init(void)
   // Initalization of characteristics in Data_Service that can provide data.
   DataService_SetParameter(DS_STRING_ID, sizeof(initString), initString);
   DataService_SetParameter(DS_STREAM_ID, DS_STREAM_LEN, initVal);
+
+  // spi addition
+  SpiService_SetParameter(SPISERVICE_IWRDATA, SPISERVICE_IWRDATA_LEN, initVal);
 
   // Start the stack in Peripheral mode.
   VOID GAPRole_StartDevice(&user_gapRoleCBs);
@@ -585,14 +668,15 @@ static void spiFxn(UArg arg0, UArg arg1)
     spiTransaction.count = sizeof(txBuf);
     spiTransaction.txBuf = &txBuf;
     spiTransaction.rxBuf = NULL;
-    int txData = *(int*)(spiTransaction.txBuf);
 
     // Open the SPI
     spiHandle = SPI_open(Board_SPI0, &spiParams);
 
-
     while (1) {
-        Log_info1("Data: %d", txData);
+        // ble addition
+        spiServiceIwrData = *(int*)(spiTransaction.txBuf);
+        SpiService_SetParameter(SPISERVICE_IWRDATA, SPISERVICE_IWRDATA_LEN, &i);
+        Log_info1("Data: %d", spiServiceIwrData);
         // Select first chip select pin and perform transfer to the first slave
         SPI_control(spiHandle, SPICC26XXDMA_SET_CSN_PIN, &csnPin0);
         SPI_transfer(spiHandle, &spiTransaction);
@@ -686,6 +770,22 @@ static void ProjectZero_taskFxn(UArg a0, UArg a1)
         // Free the received message.
         ICall_free(pMsg);
       }
+      // ble addition
+      // Process messages sent from another task or another context.
+      while (!Queue_empty(hServiceMsgQ))
+      {
+        server_char_write_t *pWrite = Queue_dequeue(hServiceMsgQ);
+
+        // Process service message.
+        switch (pWrite->svcUUID) {
+          case SPISERVICE_SERV_UUID:
+            user_spiService_ValueChangeDispatchHandler(pWrite);
+          break;
+        }
+
+          // Free the message received from the service callback.
+          ICall_free(pWrite);
+      }
     }
   }
 }
@@ -720,6 +820,10 @@ static void user_processApplicationMessage(app_msg_t *pMsg)
         case DATA_SERVICE_SERV_UUID:
           user_DataService_ValueChangeHandler(pCharData);
           break;
+        // spi addition
+//        case SPISERVICE_IWRDATA_UUID:
+//          user_SpiService_ValueChangeHandler(pCharData);
+//          break;
 
       }
       break;
@@ -733,6 +837,10 @@ static void user_processApplicationMessage(app_msg_t *pMsg)
         case DATA_SERVICE_SERV_UUID:
           user_DataService_CfgChangeHandler(pCharData);
           break;
+        // spi addition
+//        case SPISERVICE_IWRDATA_UUID:
+//          user_SpiService_CfgChangeHandler(pCharData);
+//          break;
       }
       break;
 
@@ -759,6 +867,17 @@ static void user_processApplicationMessage(app_msg_t *pMsg)
       {
         button_state_t *pButtonState = (button_state_t *)pMsg->pdu;
         user_handleButtonPress(pButtonState);
+        // ble addition
+        Clock_start(Clock_handle(&myClock));
+      }
+      break;
+
+    // ble addition
+    case APP_MSG_PERIODIC_TIMER: /* Message from swi about clock expires */
+      {
+        // Change of characteristics values in spiService that are readable/writable.
+        SpiService_SetParameter(SPISERVICE_IWRDATA, SPISERVICE_IWRDATA_LEN,
+                                     &spiServiceIwrData);
       }
       break;
   }
@@ -1094,6 +1213,69 @@ void user_DataService_CfgChangeHandler(char_data_t *pCharData)
       break;
   }
 }
+
+//spi addition
+//void user_SpiService_ValueChangeHandler(char_data_t *pCharData)
+//{
+//  // Value to hold the received string for printing via Log, as Log printouts
+//  // happen in the Idle task, and so need to refer to a global/static variable.
+//  static uint8_t received_string[SPISERVICE_IWRDATA_LEN] = {0};
+//
+//  switch (pCharData->paramID)
+//  {
+//    case SPISERVICE_IWRDATA:
+//      // Do something useful with pCharData->data here
+//      // -------------------------
+//      // Copy received data to holder array, ensuring NULL termination.
+//
+//      memset(received_string, 0, SPISERVICE_IWRDATA_LEN);
+//      memcpy(received_string, pCharData->data, SPISERVICE_IWRDATA_LEN-1);
+//      // Needed to copy before log statement, as the holder array remains after
+//      // the pCharData message has been freed and reused for something else.
+//      Log_info3("Value Change msg: %s %s: %s",
+//                (IArg)"Spi Service",
+//                (IArg)"String",
+//                (IArg)received_string);
+//      break;
+//  default:
+//    return;
+//  }
+//}
+//spi addition
+//void user_SpiService_CfgChangeHandler(char_data_t *pCharData)
+//{
+//  // Cast received data to uint16, as that's the format for CCCD writes.
+//  uint16_t configValue = *(uint16_t *)pCharData->data;
+//  char *configValString;
+//
+//  // Determine what to tell the user
+//  switch(configValue)
+//  {
+//  case GATT_CFG_NO_OPERATION:
+//    configValString = "Noti/Ind disabled";
+//    break;
+//  case GATT_CLIENT_CFG_NOTIFY:
+//    configValString = "Notifications enabled";
+//    break;
+//  case GATT_CLIENT_CFG_INDICATE:
+//    configValString = "Indications enabled";
+//    break;
+//  }
+//
+//  switch (pCharData->paramID)
+//  {
+//    case DS_STREAM_ID:
+//      Log_info3("CCCD Change msg: %s %s: %s",
+//                (IArg)"Spi Service",
+//                (IArg)"Stream",
+//                (IArg)configValString);
+//      // -------------------------
+//      // Do something useful with configValue here. It tells you whether someone
+//      // wants to know the state of this characteristic.
+//      // ...
+//      break;
+//  }
+//}
 
 
 /*
@@ -1689,5 +1871,109 @@ static char *Util_getLocalNameStr(const uint8_t *data) {
   return localNameStr;
 }
 
+/******************************************************************************
+ *****************************************************************************
+ *
+ *  ble addition functions
+ *
+ ****************************************************************************
+ *****************************************************************************/
+
+/*
+ * @brief   Process message from spi service value change
+ *
+ *          These are messages not from the BLE stack, but from the
+ *          application itself.
+ *
+ *
+ * @param   pWrite - Pointer to struct with new values
+ */
+void user_spiService_ValueChangeDispatchHandler(server_char_write_t *pWrite)
+{
+  uint32 newPeriod;
+  switch (pWrite->paramID) {
+    case SPISERVICE_IWRDATA:
+      // Do something useful with pWrite->data here
+      // -------------------------
+    break;
+    case SPISERVICE_UPDATEPERIOD:
+      // Check if clock is active before calling Clock stop. Clock period will not be updated if the clock is active.
+      if (Clock_isActive(Clock_handle(&myClock))){
+        Clock_stop(Clock_handle(&myClock));
+      }
+      // manipulate the data in whichever way you prefer
+      newPeriod = ((pWrite->data[0]) | (pWrite->data[1] << 8))*(10 / Clock_tickPeriod);
+      Clock_setPeriod(Clock_handle(&myClock), newPeriod);
+
+      Clock_start(Clock_handle(&myClock));
+    break;
+    }
+}
+
+/*
+ * @brief   Callback from sunlightService indicating a characteristic value change
+ *
+ *          This function asks the service what the received data was, and sends
+ *          this in a message to the user Task for processing.
+ *
+ * @param   paramID - parameter ID of the value that was changed
+ */
+static void user_spiServiceValueChangeCB(uint8_t paramID)
+{
+  // See spiService.h to compare paramID with characteristic value attribute.
+  // Called in Stack Task context, so can't do processing here.
+
+  // Send message to application message queue about received data.
+  uint16_t readLen = 0; // How much to read via service API
+
+  switch (paramID) {
+    case SPISERVICE_IWRDATA:
+      readLen = SPISERVICE_IWRDATA_LEN;
+    break;
+    case SPISERVICE_UPDATEPERIOD:
+      readLen = SPISERVICE_UPDATEPERIOD_LEN;
+    break;
+  }
+
+  // Allocate memory for the message.
+  // Note: The message doesn't have to contain the data itself, as that's stored in
+  //       a variable in the service. However, to prevent data loss if a new value is received
+  //       before GetParameter is called, we call GetParameter now.
+  server_char_write_t *pWrite = ICall_malloc(sizeof(server_char_write_t) + readLen);
+
+  if (pWrite != NULL)
+  {
+    pWrite->svcUUID = SPISERVICE_SERV_UUID;
+    pWrite->dataLen = readLen;
+    pWrite->paramID = paramID;
+    // Get the data from the service API.
+    // Note: Fixed length is used here, but changing the GetParameter signature is not
+    //       a problem, in case variable length is needed.
+    // Note: It could be just as well to send dataLen and a pointer to the received data directly to this callback, avoiding GetParameter alltogether.
+    SpiService_GetParameter(paramID, pWrite->data);
+
+    // Enqueue the message using pointer to queue node element.
+    Queue_enqueue(hServiceMsgQ, &pWrite->_elem);
+    // Let application know there's a message
+    Semaphore_post(sem);
+  }
+}
+
+/*
+ * @brief   Function for clock timeout
+ *
+ *          The function is called everytime the myClock object timeout.
+ *          clockParams.period controls how frequent this function is called.
+ *
+ * @param   arg0 - unused
+ */
+void myClockSwiFxn(uintptr_t arg0)
+{
+  // Can't call blocking TI-RTOS calls or BLE APIs from here, as it is Swi context
+  // .. Send a message to the Task that something is afoot.
+  user_enqueueRawAppMsg(APP_MSG_PERIODIC_TIMER, NULL, 0); // Not sending any data here, just a signal
+}
+
 /*********************************************************************
-*********************************************************************/
+ *********************************************************************/
+
