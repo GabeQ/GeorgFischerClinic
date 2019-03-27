@@ -2,27 +2,27 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="spiFxn" key="selection"/>
+		<item value="ble addition" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
-		<item value="false" key="wholeword"/>
+		<item value="true" key="wholeword"/>
 		<list key="findhistory">
+			<item value="ble addition"/>
+			<item value="solution"/>
+			<item value="user_handleButtonPress"/>
 			<item value="spiFxn"/>
-			<item value="dispHandle"/>
-			<item value="spiTransaction"/>
-			<item value="BIOS"/>
-			<item value="disphandle"/>
-			<item value="display"/>
-			<item value="SPI_TASK_PRIORITY"/>
-			<item value="TASKSTACKSIZE"/>
-			<item value="Clock_tickPeriod"/>
-			<item value="ProjectZero_createTask"/>
-			<item value="handle"/>
-			<item value="Task_Params_init"/>
-			<item value="  Task_Params_init"/>
-			<item value="PRZ_TASK_PRIORITY"/>
-			<item value="dispParams"/>
+			<item value="sunlightService_UpdatePeriodUUID"/>
+			<item value="SOLUTION"/>
+			<item value="user_sunlightServiceValueChangeCB"/>
+			<item value="user_sunlightServiceCBs"/>
+			<item value="sunlightServiceCBs_t"/>
+			<item value="Solution"/>
+			<item value="app_msg_types_t"/>
+			<item value="sunlightServiceChar1Counter"/>
+			<item value="SUNLIGHTSERVICE_SUNLIGHTSERVICECHAR1"/>
+			<item value="data"/>
+			<item value="SUNLIGHTSERVICE_UPDATEPERIOD"/>
 		</list>
 		<list key="replacehistory">
 		</list>
@@ -31,7 +31,7 @@
 		<item value="385" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="523" key="DIALOG_HEIGHT"/>
-		<item value="83" key="DIALOG_X_ORIGIN"/>
-		<item value="511" key="DIALOG_Y_ORIGIN"/>
+		<item value="281" key="DIALOG_X_ORIGIN"/>
+		<item value="1224" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

@@ -674,7 +674,8 @@ static void spiFxn(UArg arg0, UArg arg1)
 
     while (1) {
         // ble addition
-        spiServiceIwrData = *(int*)(spiTransaction.txBuf);
+//        spiServiceIwrData = *(int*)(spiTransaction.txBuf);
+        spiServiceIwrData = i;
         Log_info1("Data: %d", spiServiceIwrData);
         // Select first chip select pin and perform transfer to the first slave
         SPI_control(spiHandle, SPICC26XXDMA_SET_CSN_PIN, &csnPin0);
@@ -1212,69 +1213,6 @@ void user_DataService_CfgChangeHandler(char_data_t *pCharData)
       break;
   }
 }
-
-//spi addition
-//void user_SpiService_ValueChangeHandler(char_data_t *pCharData)
-//{
-//  // Value to hold the received string for printing via Log, as Log printouts
-//  // happen in the Idle task, and so need to refer to a global/static variable.
-//  static uint8_t received_string[SPISERVICE_IWRDATA_LEN] = {0};
-//
-//  switch (pCharData->paramID)
-//  {
-//    case SPISERVICE_IWRDATA:
-//      // Do something useful with pCharData->data here
-//      // -------------------------
-//      // Copy received data to holder array, ensuring NULL termination.
-//
-//      memset(received_string, 0, SPISERVICE_IWRDATA_LEN);
-//      memcpy(received_string, pCharData->data, SPISERVICE_IWRDATA_LEN-1);
-//      // Needed to copy before log statement, as the holder array remains after
-//      // the pCharData message has been freed and reused for something else.
-//      Log_info3("Value Change msg: %s %s: %s",
-//                (IArg)"Spi Service",
-//                (IArg)"String",
-//                (IArg)received_string);
-//      break;
-//  default:
-//    return;
-//  }
-//}
-//spi addition
-//void user_SpiService_CfgChangeHandler(char_data_t *pCharData)
-//{
-//  // Cast received data to uint16, as that's the format for CCCD writes.
-//  uint16_t configValue = *(uint16_t *)pCharData->data;
-//  char *configValString;
-//
-//  // Determine what to tell the user
-//  switch(configValue)
-//  {
-//  case GATT_CFG_NO_OPERATION:
-//    configValString = "Noti/Ind disabled";
-//    break;
-//  case GATT_CLIENT_CFG_NOTIFY:
-//    configValString = "Notifications enabled";
-//    break;
-//  case GATT_CLIENT_CFG_INDICATE:
-//    configValString = "Indications enabled";
-//    break;
-//  }
-//
-//  switch (pCharData->paramID)
-//  {
-//    case DS_STREAM_ID:
-//      Log_info3("CCCD Change msg: %s %s: %s",
-//                (IArg)"Spi Service",
-//                (IArg)"Stream",
-//                (IArg)configValString);
-//      // -------------------------
-//      // Do something useful with configValue here. It tells you whether someone
-//      // wants to know the state of this characteristic.
-//      // ...
-//      break;
-//  }
-//}
 
 
 /*
