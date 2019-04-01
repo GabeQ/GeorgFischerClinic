@@ -2,12 +2,16 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="ble addition" key="selection"/>
+		<item value="Data" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="true" key="wholeword"/>
 		<list key="findhistory">
+			<item value="data"/>
+			<item value="spi"/>
+			<item value="Board_SPI0"/>
+			<item value="Display_print1"/>
 			<item value="ble addition"/>
 			<item value="solution"/>
 			<item value="user_handleButtonPress"/>
@@ -19,10 +23,6 @@
 			<item value="sunlightServiceCBs_t"/>
 			<item value="Solution"/>
 			<item value="app_msg_types_t"/>
-			<item value="sunlightServiceChar1Counter"/>
-			<item value="SUNLIGHTSERVICE_SUNLIGHTSERVICECHAR1"/>
-			<item value="data"/>
-			<item value="SUNLIGHTSERVICE_UPDATEPERIOD"/>
 		</list>
 		<list key="replacehistory">
 		</list>
