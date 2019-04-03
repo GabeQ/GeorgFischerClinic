@@ -105,8 +105,16 @@ Void spiFxn(UArg arg0, UArg arg1)
     SPI_Handle spiHandle;
     SPI_Params spiParams;
     SPI_Transaction spiTransaction;
-    uint8_t txBuf[4] = {0x05, 0x04, 0x03, 0x02};    // Transmit buffer
-    uint8_t rxBuf[4];
+    long dataToConvert = 5432;
+
+    uint8_t txBuf[4];    // Transmit buffer
+    uint8_t rxBuf[4];    // Receive buffer
+
+    // Put data into transfer buffer
+    txBuf[0] = (dataToConvert >> 24) & 0xFF;
+    txBuf[1] = (dataToConvert >> 16) & 0xFF;
+    txBuf[2] = (dataToConvert >> 8) & 0xFF;
+    txBuf[3] = (dataToConvert >> 0) & 0xFF;
 
 
     // Init SPI and specify non-default parameters
@@ -135,10 +143,9 @@ Void spiFxn(UArg arg0, UArg arg1)
     while (1) {
         Display_clear(dispHandle);
         Display_print4(dispHandle, i, 0, "Data from slave: %i%i%i%i", rxBuf[0], rxBuf[1], rxBuf[2], rxBuf[3]);
-        // Select first chip select pin and perform transfer to the first slave
         SPI_transfer(spiHandle, &spiTransaction);
         i = i + 1;
-
+        Task_sleep(10000);
     }
 }
 

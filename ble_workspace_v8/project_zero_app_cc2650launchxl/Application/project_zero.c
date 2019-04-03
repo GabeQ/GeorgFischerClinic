@@ -291,6 +291,7 @@ uint32_t spiServiceIwrData = 0;
 static void ProjectZero_init( void );
 static void ProjectZero_taskFxn(UArg a0, UArg a1);
 static void spiFxn(UArg a0, UArg a1);
+static void transferCallback(SPI_Handle handle, SPI_Transaction *transaction);
 
 static void user_processApplicationMessage(app_msg_t *pMsg);
 static uint8_t ProjectZero_processStackMsg(ICall_Hdr *pMsg);
@@ -425,7 +426,7 @@ void ProjectZero_createTask(void)
   taskSpiParams.arg0 = 1000000 / Clock_tickPeriod;
   taskSpiParams.stackSize = TASKSTACKSIZE;
   taskSpiParams.stack = &task0Stack;
-
+//
   Task_construct(&task0Struct, (Task_FuncPtr)spiFxn, &taskSpiParams, NULL);
 }
 
@@ -643,6 +644,12 @@ static void ProjectZero_init(void)
   GATT_RegisterForMsgs(selfEntity);
 }
 
+// Callback function
+static void transferCallback(SPI_Handle handle, SPI_Transaction *transaction)
+{
+    // Start another transfer
+    SPI_transfer(handle, transaction);
+}
 
 static void spiFxn(UArg arg0, UArg arg1)
 {
@@ -653,40 +660,75 @@ static void spiFxn(UArg arg0, UArg arg1)
     SPI_Handle spiHandle;
     SPI_Params spiParams;
     SPI_Transaction spiTransaction;
-    PIN_Id csnPin0  = PIN_ID(Board_SPI0_CSN);
-    PIN_Id csnPin1  = PIN_ID(Board_SPI1_CSN);
-    int txBuf = 11;    // Transmit buffer
-    //int* pTxBuf = &txBuf;
+    uint8_t txBuf[4] = {0x02, 0x03, 0x04, 0x05};    // Transfer buffer
+    uint8_t rxBuf[4];                               // Receive buffer
+    long dataConverted;
 
     // Init SPI and specify non-default parameters
-    SPI_Params_init(&spiParams);
-    spiParams.bitRate     = 1000000;
-    spiParams.frameFormat = SPI_POL1_PHA1;
-    spiParams.mode        = SPI_MASTER;
+    SPI_Params_init(&spiParams); // same
+    spiParams.bitRate             = 1000000;
+    spiParams.frameFormat         = SPI_POL0_PHA1;
+    spiParams.mode                = SPI_SLAVE;
+    spiParams.transferMode        = SPI_MODE_CALLBACK;
+    spiParams.transferCallbackFxn = transferCallback;
 
     // Configure the transaction
-    spiTransaction.count = sizeof(txBuf);
-    spiTransaction.txBuf = &txBuf;
-    spiTransaction.rxBuf = NULL;
+    spiTransaction.count = 4;
+    spiTransaction.txBuf = txBuf;
+    spiTransaction.rxBuf = rxBuf;
 
     // Open the SPI
     spiHandle = SPI_open(Board_SPI0, &spiParams);
-
+    SPI_transfer(spiHandle, &spiTransaction);
     while (1) {
         // ble addition
-//        spiServiceIwrData = *(int*)(spiTransaction.txBuf);
-        spiServiceIwrData = i;
-        Log_info1("Data: %d", spiServiceIwrData);
-        // Select first chip select pin and perform transfer to the first slave
-        SPI_control(spiHandle, SPICC26XXDMA_SET_CSN_PIN, &csnPin0);
-        SPI_transfer(spiHandle, &spiTransaction);
-        // Then switch chip select pin and perform transfer to the second slave
-        SPI_control(spiHandle, SPICC26XXDMA_SET_CSN_PIN, &csnPin1);
-        SPI_transfer(spiHandle, &spiTransaction);
+        Log_info4("Data from Master: %i%i%i%i", rxBuf[0], rxBuf[1], rxBuf[2], rxBuf[3]);
+        dataConverted = (rxBuf[1] << 24) + (rxBuf[0] << 16) + (rxBuf[3] << 8) + rxBuf[2];
+        Log_info1("Data received converted: %i", dataConverted);
+        spiServiceIwrData = dataConverted;
+//        Log_info1("spiServiceIwrData: %i", spiServiceIwrData);
         i = i + 1;
         Task_sleep(10000);
     }
 }
+
+// SPI Master Code Which Works for transfers
+//Void spiFxn(UArg arg0, UArg arg1)
+//{
+//    // Set up counter
+//    int i = 1;
+//
+//    // Set up SPI handles
+//    SPI_Handle spiHandle;
+//    SPI_Params spiParams;
+//    SPI_Transaction spiTransaction;
+//    uint8_t txBuf[4] = {0x05, 0x04, 0x03, 0x02};    // Transmit buffer
+//    uint8_t rxBuf[4];
+//
+//
+//    // Init SPI and specify non-default parameters
+//    SPI_Params_init(&spiParams);
+//    spiParams.bitRate     = 1000000;
+//    spiParams.frameFormat = SPI_POL0_PHA1;
+//    spiParams.mode        = SPI_MASTER;
+//
+//    // Configure the transaction
+//    spiTransaction.count = 4;
+//    spiTransaction.txBuf = txBuf;
+//    spiTransaction.rxBuf = rxBuf;
+////    int data = *(int*)(spiTransaction.txBuf);
+//
+//    // Open the SPI
+//    spiHandle = SPI_open(Board_SPI0, &spiParams);
+//
+//    while (1) {
+//        SPI_transfer(spiHandle, &spiTransaction);
+//        Log_info4("Data from slave: %i%i%i%i", rxBuf[0], rxBuf[1], rxBuf[2], rxBuf[3]);
+//        // Select first chip select pin and perform transfer to the first slave
+//        i = i + 1;
+//        Task_sleep(10000);
+//    }
+//}
 /*
  * @brief   Application task entry point.
  *
@@ -876,6 +918,7 @@ static void user_processApplicationMessage(app_msg_t *pMsg)
     case APP_MSG_PERIODIC_TIMER: /* Message from swi about clock expires */
       {
         // Change of characteristics values in spiService that are readable/writable.
+        Log_info1("spiServiceIwrData: %i", spiServiceIwrData);
         SpiService_SetParameter(SPISERVICE_IWRDATA, SPISERVICE_IWRDATA_LEN,
                                      &spiServiceIwrData);
       }

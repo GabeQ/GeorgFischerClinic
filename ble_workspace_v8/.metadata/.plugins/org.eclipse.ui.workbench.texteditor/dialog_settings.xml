@@ -2,27 +2,27 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="Data" key="selection"/>
+		<item value="user_spiService_ValueChangeDispatchHandler" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="true" key="wholeword"/>
 		<list key="findhistory">
+			<item value="user_spiService_ValueChangeDispatchHandler"/>
+			<item value="UUID"/>
+			<item value="spiFxn"/>
+			<item value="task0Struct"/>
+			<item value="ProjectZero_createTask"/>
+			<item value="ble addition"/>
+			<item value="transferCallback"/>
+			<item value="Task_construct"/>
 			<item value="data"/>
 			<item value="spi"/>
 			<item value="Board_SPI0"/>
 			<item value="Display_print1"/>
-			<item value="ble addition"/>
 			<item value="solution"/>
 			<item value="user_handleButtonPress"/>
-			<item value="spiFxn"/>
 			<item value="sunlightService_UpdatePeriodUUID"/>
-			<item value="SOLUTION"/>
-			<item value="user_sunlightServiceValueChangeCB"/>
-			<item value="user_sunlightServiceCBs"/>
-			<item value="sunlightServiceCBs_t"/>
-			<item value="Solution"/>
-			<item value="app_msg_types_t"/>
 		</list>
 		<list key="replacehistory">
 		</list>

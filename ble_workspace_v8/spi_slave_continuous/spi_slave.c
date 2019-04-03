@@ -106,8 +106,8 @@ static void spiSlaveTaskFxn(UArg a0, UArg a1)
     SPI_Handle handle;
     SPI_Params params;
     SPI_Transaction transaction;
-    uint8_t txBuf[2] = {0x01, 0x02};
-    uint8_t rxBuf[2];              // Receive and transmit buffer
+    uint8_t txBuf[4] = {0x01, 0x02, 0x03, 0x04};
+    uint8_t rxBuf[4];              // Receive and transmit buffer
     // Init SPI and specify non-default parameters
     SPI_Params_init(&params);
     params.bitRate             = 1000000;
@@ -116,7 +116,7 @@ static void spiSlaveTaskFxn(UArg a0, UArg a1)
     params.transferMode        = SPI_MODE_CALLBACK;
     params.transferCallbackFxn = transferCallback;
     // Configure the transaction
-    transaction.count = 2;
+    transaction.count = 4;
     transaction.txBuf = txBuf;
     transaction.rxBuf = rxBuf;
 
@@ -134,8 +134,9 @@ static void spiSlaveTaskFxn(UArg a0, UArg a1)
     // Wait forever
     while(true){
         Display_clear(dispHandle);
-        Display_print2(dispHandle, i, 0, "Data from master: %i%i", rxBuf[0], rxBuf[1]);
+        Display_print4(dispHandle, i, 0, "Data from master: %i%i%i%i", rxBuf[0], rxBuf[1], rxBuf[2], rxBuf[3]);
         i = i+1;
+        Task_sleep(10000);
     }
 }
 
